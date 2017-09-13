@@ -2,16 +2,25 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background2"
     android:gravity="center"
     android:orientation="vertical">
 
-    <com.yao.hancoder.view.CanvasView
+    <!--<com.yao.hancoder.view.CanvasView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_weight="3" />
 
     <com.yao.hancoder.view.BezierView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_weight="1" />-->
+
+    <com.yao.hancoder.view.UnderlineView
+        android:id="@+id/paint_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/white" />
+
 </LinearLayout>

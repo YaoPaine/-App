@@ -113,5 +113,15 @@ public class CanvasView extends View {
         mPath.lineTo(300, 700);
         mPath.rLineTo(100, 0);
         canvas.drawPath(mPath, mPaint);
+
+        mPaint.setTextSize(18);
+        canvas.drawText("春天花卉开", 400, 400, mPaint);
+
+        mPaint.setTextSize(36);
+        canvas.drawText("鸟儿自由自在", 500, 500, mPaint);
+
+        mPaint.setStrokeWidth(10);
+        mPaint.setTextSize(64);
+        canvas.drawText("鸟儿自由自在", 600, 600, mPaint);
     }
 }
