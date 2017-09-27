@@ -1,10 +1,14 @@
 package com.yao.notificationdemo;
 
+import android.app.Notification;
 import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
+import android.support.v4.app.TaskStackBuilder;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -20,37 +24,24 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final NotificationManager notifyManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 
         findViewById(R.id.tv_send_notification).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
 //                progressNotification();
-                final NotificationCompat.Builder builder = new NotificationCompat.Builder(MainActivity.this);
 
-                builder.setSmallIcon(R.mipmap.ic_launcher);
-                builder.setContentTitle("订单未支付通知");
-                builder.setContentText("您有一笔订单未支付");
-                builder.setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher));
-                new Thread() {
-                    @Override
-                    public void run() {
-                        super.run();
-                        for (int i = 0; i < 10; i++) {
-                            builder.setContentText("您有" + (++num) + "笔订单未支付").setNumber(num);
-                            notifyManager.notify(ID, builder.build());
-                            try {
-                                Thread.sleep(1000);
-                            } catch (InterruptedException e) {
+//                updateNotificationNumber();
 
-                            }
-                        }
-                    }
-                }.start();
+//                clickCancel();
+
+                operator();
+
+//                show();
+
+//                showNotification();
             }
         });
-
     }
 
     /**
@@ -86,14 +77,143 @@ public class MainActivity extends AppCompatActivity {
         }.start();
     }
 
-    public NotificationCompat.Builder updateNotificationNumber() {
-
-
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
+    public void updateNotificationNumber() {
+        final NotificationCompat.Builder builder = new NotificationCompat.Builder(MainActivity.this);
+        final NotificationManager notifyManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         builder.setSmallIcon(R.mipmap.ic_launcher);
         builder.setContentTitle("订单未支付通知");
         builder.setContentText("您有一笔订单未支付");
         builder.setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher));
-        return builder;
+        new Thread() {
+            @Override
+            public void run() {
+                super.run();
+                for (int i = 0; i < 10; i++) {
+                    builder.setContentText("您有" + (++num) + "笔订单未支付").setNumber(num);
+                    notifyManager.notify(ID, builder.build());
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+
+                    }
+                }
+            }
+        }.start();
+    }
+
+    public void clickCancel() {
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(MainActivity.this);
+        NotificationManager notifyManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        builder.setSmallIcon(R.mipmap.ic_launcher);
+        builder.setContentTitle("订单未支付通知");
+        builder.setContentText("您有一笔订单未支付");
+        builder.setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher));
+        builder.setAutoCancel(true);
+        Notification notification = builder.build();
+        notifyManager.notify(ID, notification);
+    }
+
+    public void operator() {
+        NotificationCompat.Builder mBuilder =
+                new NotificationCompat.Builder(this)
+                        .setSmallIcon(R.mipmap.ic_launcher)
+                        .setContentTitle("My notification")
+                        .setContentText("Hello World!")
+                        .setAutoCancel(true);
+        // Creates an explicit intent for an Activity in your app
+        Intent resultIntent = new Intent(this, ResultActivity.class);
+
+        // The stack builder object will contain an artificial back stack for the
+        // started Activity.
+        // This ensures that navigating backward from the Activity leads out of
+        // your application to the Home screen.
+        TaskStackBuilder stackBuilder = TaskStackBuilder.create(this);
+        // Adds the back stack for the Intent (but not the Intent itself)
+        stackBuilder.addParentStack(ResultActivity.class);
+        // Adds the Intent that starts the Activity to the top of the stack
+        stackBuilder.addNextIntent(resultIntent);
+        PendingIntent resultPendingIntent = stackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
+
+        mBuilder.setContentIntent(resultPendingIntent);
+        NotificationManager mNotificationManager =
+                (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        // mId allows you to update the notification later on.
+        mNotificationManager.notify(ID, mBuilder.build());
+    }
+
+    public void show() {
+        NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+
+        Intent msgIntent = new Intent();
+        msgIntent.setClass(this, ResultActivity.class);
+
+        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, msgIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+// create and send notificaiton
+        NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(this)
+                .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher))
+                .setSmallIcon(getApplicationInfo().icon)
+                .setWhen(System.currentTimeMillis())
+                .setAutoCancel(true)//自己维护通知的消失
+                .setContentTitle("我是标题")
+                .setTicker("我是ticker")
+                .setContentText("我是内容")
+                .setContentIntent(pendingIntent);
+        //将一个Notification变成悬挂式Notification
+        mBuilder.setFullScreenIntent(pendingIntent, true);
+        Notification notification = mBuilder.build();
+        manager.notify(0, notification);
+
+    }
+
+    public void showNotification() {
+        NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+
+        Intent msgIntent = new Intent();
+        Intent mainIntent = new Intent();
+        msgIntent.setClass(this, ResultActivity.class);
+        mainIntent.setClass(this, MainActivity.class);
+        //注意此处的顺序
+        Intent[] intents = new Intent[]{mainIntent, msgIntent};
+        PendingIntent pendingIntent = PendingIntent.
+                getActivities(this, 0, intents, PendingIntent.FLAG_UPDATE_CURRENT);
+
+        // create and send notificaiton
+        NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(this)
+                .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher))
+                .setSmallIcon(getApplicationInfo().icon)
+                .setWhen(System.currentTimeMillis())
+                .setAutoCancel(true)//自己维护通知的消失
+                .setContentTitle("我是标题")
+                .setTicker("我是ticker")
+                .setContentText("我是内容")
+                .setContentIntent(pendingIntent);
+        //将一个Notification变成悬挂式Notification
+//        mBuilder.setFullScreenIntent(pendingIntent, true);
+        Notification notification = mBuilder.build();
+        manager.notify(0, notification);
+    }
+
+    public void showNotification2() {
+        NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+
+        Intent msgIntent = new Intent();
+        msgIntent.setClass(this, ResultActivity.class);
+
+        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, msgIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+        // create and send notificaiton
+        NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(this)
+                .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher))
+                .setSmallIcon(getApplicationInfo().icon)
+                .setWhen(System.currentTimeMillis())
+                .setAutoCancel(true)//自己维护通知的消失
+                .setContentTitle("我是标题")
+                .setTicker("我是ticker")
+                .setContentText("我是内容")
+                .setContentIntent(pendingIntent);
+        //将一个Notification变成悬挂式Notification
+        mBuilder.setFullScreenIntent(pendingIntent, true);
+        Notification notification = mBuilder.build();
+        manager.notify(0, notification);
     }
 }
