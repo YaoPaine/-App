@@ -35,11 +35,13 @@ public class MainActivity extends AppCompatActivity {
 
 //                clickCancel();
 
-                operator();
+//                operator();
 
 //                show();
 
 //                showNotification();
+
+                showNotification();
             }
         });
     }
