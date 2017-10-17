@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/moduleb/moduleb.iml" filepath="$PROJECT_DIR$/moduleb/moduleb.iml" />
       <module fileurl="file://$PROJECT_DIR$/modulec/modulec.iml" filepath="$PROJECT_DIR$/modulec/modulec.iml" />
       <module fileurl="file://$PROJECT_DIR$/moduled/moduled.iml" filepath="$PROJECT_DIR$/moduled/moduled.iml" />
+      <module fileurl="file://$PROJECT_DIR$/resource/resource.iml" filepath="$PROJECT_DIR$/resource/resource.iml" />
     </modules>
   </component>
 </project>
