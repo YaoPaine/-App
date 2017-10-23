@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Resource</string>
+    <string name="app_name">RxJavaAndRetrofit</string>
+    <string name="moduleA">ModuleA</string>
+    <string name="moduleB">ModuleB</string>
+    <string name="moduleC">ModuleC</string>
+    <string name="moduleD">ModuleD</string>
 </resources>

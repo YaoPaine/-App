@@ -9,7 +9,7 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        if (moduleAisDebug.toBoolean()) {
+        if (moduleDisDebug.toBoolean()) {
             applicationId "com.yao.moduled"
         }
         minSdkVersion rootProject.ext.minSdkVersion
@@ -37,7 +37,6 @@ android {
 
                 }
             }
-
         }
     }
 }
