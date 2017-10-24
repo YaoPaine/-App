@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/layout_root"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.yao.moduleb.MainActivity">
+    android:layout_height="match_parent">
 
 
     <TextView
+        android:id="@+id/tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:text="我是module B"
+        android:text="我是module A"
         android:textColor="@color/grey_font1"
         android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_root"
         app:layout_constraintLeft_toLeftOf="@id/layout_root"
-        app:layout_constraintRight_toRightOf="@id/layout_root" />
+        app:layout_constraintRight_toRightOf="@id/layout_root"
+        app:layout_constraintTop_toTopOf="@id/layout_root" />
 
 </android.support.constraint.ConstraintLayout>
