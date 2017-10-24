@@ -26,7 +26,7 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile rootProject.ext.appcompat_v7
+//    compile rootProject.ext.appcompat_v7
     //compile 'com.android.support:design:25.3.1'
     //compile 'com.android.support:cardview-v7:25.3.1'
     //net
@@ -40,5 +40,13 @@ dependencies {
     compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
     //rxLifecycle
     compile 'com.trello.rxlifecycle2:rxlifecycle-components:2.2.0'
-    compile project(':resource')
+    if (idDebug.toBoolean()) {
+        compile project(':resource')
+    } else {
+        compile project(':modulea')
+        compile project(':moduleb')
+        compile project(':moduleb')
+        compile project(':modulec')
+        compile project(':moduled')
+    }
 }

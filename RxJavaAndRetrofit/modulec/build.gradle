@@ -43,6 +43,5 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile project(':resource')
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile project(':lib-mvp')
 }

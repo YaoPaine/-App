@@ -1,1 +1,1 @@
-include ':app', ':modulea', ':moduleb', ':moduleb', ':modulec', ':moduled', ':resource'
+include ':app', ':modulea', ':moduleb', ':moduleb', ':modulec', ':moduled', ':resource', ':lib-mvp', ':lib-common'
