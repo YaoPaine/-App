@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:label">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.yao.rxjavaandretrofit.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,6 +19,7 @@
             </intent-filter>
         </activity>
 
+        <activity android:name="com.yao.modulea.ModuleAActivity" />
         <activity android:name="com.yao.moduleb.ModuleBActivity" />
         <activity android:name="com.yao.modulec.ModuleCActivity" />
 

@@ -23,6 +23,8 @@ task clean(type: Delete) {
     delete rootProject.buildDir
 }
 
+def butterKnifeVersion = "8.8.1"
+
 ext {
     compileSdkVersion = 26
     buildToolsVersion = "26.0.2"
@@ -33,6 +35,10 @@ ext {
     versionCode = 1
     versionName = "1.0.0"
 
+
     appcompat_v7 = "com.android.support:appcompat-v7:26.+"
 
+    //butterknife
+    butterKnife = "com.jakewharton:butterknife:$butterKnifeVersion"
+    butterKnifeCompiler = "com.jakewharton:butterknife-compiler:$butterKnifeVersion"
 }

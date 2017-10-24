@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:text="跳转到 module B 带参" />
+        android:text="跳转到 module A 带参" />
 
     <Button
         android:id="@+id/button3"

@@ -31,6 +31,6 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile project(':resource')
-    compile 'com.jakewharton:butterknife:8.8.1'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    compile rootProject.ext.butterKnife
+    annotationProcessor rootProject.ext.butterKnifeCompiler
 }
