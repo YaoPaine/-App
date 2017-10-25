@@ -3,29 +3,34 @@ if (moduleDisDebug.toBoolean()) {
 } else {
     apply plugin: 'com.android.library'
 }
+apply plugin: 'com.jakewharton.butterknife'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
 
+
     defaultConfig {
-        if (moduleDisDebug.toBoolean()) {
-            applicationId "com.yao.moduled"
+        if (moduleCisDebug.toBoolean()) {
+            applicationId "com.yao.modulec"
         }
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode rootProject.ext.versionCode
         versionName rootProject.ext.versionName
+        //所有资源文件必须以""这个开头
         resourcePrefix "module_d_"
+
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         //ARouter
         javaCompileOptions {
             annotationProcessorOptions {
-                arguments = [ moduleName : project.getName() ]
+                arguments = [moduleName: project.getName()]
             }
         }
     }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -36,9 +41,9 @@ android {
     sourceSets {
         main {
             if (moduleDisDebug.toBoolean()) {
-                manifest.srcFile 'src/main/debug/AndroidManifest.xml'
+                manifest.srcFile "src/main/debug/AndroidManifest.xml"
             } else {
-                manifest.srcFile 'src/main/AndroidManifest.xml'
+                manifest.srcFile "src/main/AndroidManifest.xml"
                 java {
 
                 }
@@ -47,12 +52,12 @@ android {
     }
 }
 
-
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile fileTree(dir: 'libs', include: ['*.jar'])
     compile project(':lib-mvp')
     //ARouter
     annotationProcessor rootProject.ext.arouterCompiler
 
     annotationProcessor rootProject.ext.butterKnifeCompiler
+
 }

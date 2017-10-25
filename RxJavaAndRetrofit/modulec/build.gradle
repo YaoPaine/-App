@@ -3,7 +3,6 @@ if (moduleCisDebug.toBoolean()) {
 } else {
     apply plugin: 'com.android.library'
 }
-
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
@@ -53,6 +52,5 @@ dependencies {
     compile project(':lib-mvp')
     //ARouter
     annotationProcessor rootProject.ext.arouterCompiler
-//
     annotationProcessor rootProject.ext.butterKnifeCompiler
 }

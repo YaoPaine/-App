@@ -13,7 +13,7 @@ android {
         //ARouter
         javaCompileOptions {
             annotationProcessorOptions {
-                arguments = [ moduleName : project.getName() ]
+                arguments = [moduleName: project.getName()]
             }
         }
 
@@ -35,29 +35,25 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-
     //ARouter
     annotationProcessor rootProject.ext.arouterCompiler
     //butterKnife
     annotationProcessor rootProject.ext.butterKnifeCompiler
-
     if (idDebug.toBoolean()) {
         compile project(':resource')
     }
-
     if (!moduleAisDebug.toBoolean()) {
         compile project(':modulea')
     }
-
     if (!moduleBisDebug.toBoolean()) {
         compile project(':moduleb')
     }
-
     if (!moduleCisDebug.toBoolean()) {
         compile project(':modulec')
     }
-
     if (!moduleDisDebug.toBoolean()) {
         compile project(':moduled')
     }
+    compile project(':moduled')
+    compile project(':modulec')
 }
