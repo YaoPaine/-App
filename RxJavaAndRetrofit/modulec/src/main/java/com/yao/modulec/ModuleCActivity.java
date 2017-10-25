@@ -23,6 +23,7 @@ public class ModuleCActivity extends BaseActivity {
         if (R.id.tv_module_c == id) {
             Intent intent = new Intent();
             intent.setClassName("com.yao.rxjavaandretrofit", "com.yao.moduled.ModuleDActivity");
+//            intent.setComponent(new ComponentName("com.yao.rxjavaandretrofit", "com.yao.moduled.ModuleDActivity"));
             startActivity(intent);
         }
     }

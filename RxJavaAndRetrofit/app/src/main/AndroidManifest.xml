@@ -28,7 +28,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.yao.modulec.ModuleCActivity" />
-
+        <activity android:name="com.yao.moduled.ModuleDActivity" />
     </application>
 
 </manifest>
