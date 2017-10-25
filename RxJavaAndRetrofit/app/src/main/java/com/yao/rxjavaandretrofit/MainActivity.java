@@ -5,6 +5,7 @@ import android.util.Log;
 import android.view.View;
 
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.yao.lib_common.model.UserModel;
 import com.yao.lib_mvp.BaseActivity;
 import com.yao.lib_mvp.R2;
 import com.yao.resource.constants.RouterConstants;
@@ -25,7 +26,7 @@ public class MainActivity extends BaseActivity {
 //        Intent intent = new Intent();
         switch (view.getId()) {
             case R.id.button1:
-                ARouter.getInstance().build(RouterConstants.MODULE_C_ACTIVITY).navigation();
+                ARouter.getInstance().build(RouterConstants.MODULE_A_ACTIVITY).navigation();
                /* intent.setClass(this, ModuleAActivity.class);
                 startActivity(intent);*/
                 break;
@@ -33,6 +34,9 @@ public class MainActivity extends BaseActivity {
                 /*intent.setClass(this, ModuleAActivity.class);
                 intent.putExtra("module", "my name is he yao");
                 startActivity(intent);*/
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("user", new UserModel("heyao","!@#qwe123"));
+                ARouter.getInstance().build(RouterConstants.MODULE_A_ACTIVITY).with(bundle).navigation();
                 break;
             case R.id.button3:
 

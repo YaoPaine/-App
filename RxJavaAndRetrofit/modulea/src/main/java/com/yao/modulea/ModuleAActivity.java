@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
+import com.alibaba.android.arouter.launcher.ARouter;
 import com.yao.lib_mvp.BaseActivity;
 import com.yao.resource.constants.RouterConstants;
 
@@ -36,6 +37,8 @@ public class ModuleAActivity extends BaseActivity {
             /*Intent intent = new Intent();
             intent.setAction("com.yao.module.b.main.activity");
             startActivity(intent);*/
+            Bundle bundle = getIntent().getExtras();
+            ARouter.getInstance().build(RouterConstants.MODULE_B_ACTIVITY).with(bundle).navigation();
         }
     }
 }

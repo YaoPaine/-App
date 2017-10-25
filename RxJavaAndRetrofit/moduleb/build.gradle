@@ -17,6 +17,8 @@ android {
         versionCode rootProject.ext.versionCode
         versionName rootProject.ext.versionName
 
+        resourcePrefix "module_b_"
+
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         //ARouter
