@@ -20,7 +20,13 @@
         </activity>
 
         <activity android:name="com.yao.modulea.ModuleAActivity" />
-        <activity android:name="com.yao.moduleb.ModuleBActivity" />
+        <activity android:name="com.yao.moduleb.ModuleBActivity">
+            <intent-filter>
+                <action android:name="com.yao.module.b.main.activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity android:name="com.yao.modulec.ModuleCActivity" />
 
     </application>
