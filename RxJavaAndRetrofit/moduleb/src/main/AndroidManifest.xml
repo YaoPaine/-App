@@ -9,6 +9,13 @@
         android:supportsRtl="true"
         tools:replace="android:label">
 
+        <activity android:name="com.yao.moduleb.ModuleBActivity">
+            <intent-filter>
+                <action android:name="com.yao.module.b.main.activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

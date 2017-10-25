@@ -4,6 +4,7 @@
     package="com.yao.rxjavaandretrofit">
 
     <application
+        android:name="com.yao.rxjavaandretrofit.BaseApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -19,16 +20,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.yao.modulea.ModuleAActivity" />
-        <activity android:name="com.yao.moduleb.ModuleBActivity">
-            <intent-filter>
-                <action android:name="com.yao.module.b.main.activity" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity android:name="com.yao.modulec.ModuleCActivity" />
-        <activity android:name="com.yao.moduled.ModuleDActivity" />
     </application>
 
 </manifest>

@@ -20,6 +20,12 @@ android {
         resourcePrefix "module_c_"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
+        //ARouter
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [ moduleName : project.getName() ]
+            }
+        }
     }
     buildTypes {
         release {
@@ -45,5 +51,8 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':lib-mvp')
+    //ARouter
+    annotationProcessor rootProject.ext.arouterCompiler
+//
     annotationProcessor rootProject.ext.butterKnifeCompiler
 }
