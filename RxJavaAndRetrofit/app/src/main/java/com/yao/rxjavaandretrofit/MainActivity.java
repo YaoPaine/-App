@@ -1,6 +1,9 @@
 package com.yao.rxjavaandretrofit;
 
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.view.View;
 
@@ -24,7 +27,7 @@ public class MainActivity extends BaseActivity {
         Locale[] availableLocales = Locale.getAvailableLocales();
         for (Locale availableLocale : availableLocales) {
             try {
-                Log.e(TAG, "getCountry()：" + availableLocale.getCountry() +
+                /*Log.e(TAG, "getCountry()：" + availableLocale.getCountry() +
                         "\tgetDisplayCountry()：" + availableLocale.getDisplayCountry() +
                         "\tgetDisplayLanguage()：" + availableLocale.getDisplayLanguage() +
                         "\tgetDisplayName()" + availableLocale.getDisplayName() +
@@ -32,9 +35,11 @@ public class MainActivity extends BaseActivity {
                         "\tgetISO3Country()：" + availableLocale.getISO3Country() +
                         "\tgetISO3Language()：" + availableLocale.getISO3Language() +
                         "\tgetDisplayVariant()：" + availableLocale.getDisplayVariant()
-                );
+                );*/
+                Log.e(TAG, "getLanguage(): " + availableLocale.getLanguage() +
+                        "\tgetDisplayLanguage(): " + availableLocale.getDisplayName());
             } catch (Exception e) {
-                Log.e(TAG, "onCreate: " + e);
+                Log.e(TAG, "海上生明月,天涯共此时: " + e);
             }
 
         }
@@ -42,7 +47,6 @@ public class MainActivity extends BaseActivity {
 
     @OnClick({R2.id.button1, R2.id.button2, R2.id.button3})
     public void clickEvent(View view) {
-        Log.e(TAG, "clickEvent: ");
 //        Intent intent = new Intent();
         switch (view.getId()) {
             case R.id.button1:
@@ -59,7 +63,13 @@ public class MainActivity extends BaseActivity {
                 ARouter.getInstance().build(RouterConstants.MODULE_A_ACTIVITY).with(bundle).navigation();
                 break;
             case R.id.button3:
-
+                Fragment fragment = (Fragment) ARouter.getInstance().build(RouterConstants.MODULE_B_FRAGMENT).navigation();
+                Log.e(TAG, "fragment==null: " + (fragment == null));
+                if (null != fragment) {
+                    FragmentManager fragmentManager = getSupportFragmentManager();
+                    FragmentTransaction transaction = fragmentManager.beginTransaction();
+                    transaction.add(R.id.container, fragment).commit();
+                }
                 break;
         }
     }

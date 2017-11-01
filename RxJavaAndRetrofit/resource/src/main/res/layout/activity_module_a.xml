@@ -19,4 +19,16 @@
         app:layout_constraintRight_toRightOf="@id/layout_root"
         app:layout_constraintTop_toTopOf="@id/layout_root" />
 
+    <Button
+        android:id="@+id/button_get_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取module B中的Fragment"
+        android:textAllCaps="false" />
+
+    <FrameLayout
+        android:id="@+id/module_a_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
 </android.support.constraint.ConstraintLayout>

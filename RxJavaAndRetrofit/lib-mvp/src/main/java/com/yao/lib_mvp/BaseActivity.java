@@ -1,5 +1,6 @@
 package com.yao.lib_mvp;
 
+
 import android.support.v7.app.AppCompatActivity;
 
 import butterknife.ButterKnife;
@@ -12,6 +13,7 @@ import butterknife.Unbinder;
 public abstract class BaseActivity extends AppCompatActivity {
 
     protected String TAG = getClass().getSimpleName();
+
     private Unbinder unbinder;
 
     @Override

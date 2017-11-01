@@ -9,7 +9,6 @@ android {
         versionCode rootProject.ext.versionCode
         versionName rootProject.ext.versionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
         //ARouter
         javaCompileOptions {
             annotationProcessorOptions {
@@ -54,6 +53,4 @@ dependencies {
     if (!moduleDisDebug.toBoolean()) {
         compile project(':moduled')
     }
-    compile project(':moduled')
-    compile project(':modulec')
 }
