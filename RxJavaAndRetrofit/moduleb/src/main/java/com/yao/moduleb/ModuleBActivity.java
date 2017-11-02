@@ -6,8 +6,8 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
-import com.yao.lib_common.model.UserModel;
-import com.yao.lib_mvp.BaseActivity;
+import com.yao.lib_common.model.entity.UserModel;
+import com.yao.lib_mvp.base.BaseActivity;
 import com.yao.resource.constants.RouterConstants;
 
 import butterknife.BindView;

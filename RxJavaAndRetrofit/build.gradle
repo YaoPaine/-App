@@ -24,6 +24,7 @@ task clean(type: Delete) {
 }
 
 def butterKnifeVersion = "8.8.1"
+def supportVersion = "26.1.0"
 
 ext {
     compileSdkVersion = 26
@@ -35,8 +36,10 @@ ext {
     versionCode = 1
     versionName = "1.0.0"
 
-
-    appcompat_v7 = "com.android.support:appcompat-v7:26.+"
+    appcompat_v7 = "com.android.support:appcompat-v7:$supportVersion"
+    supportV4 = "com.android.support:support-v4:$supportVersion"
+    recyclerView = "com.android.support:recyclerview-v7:$supportVersion"
+    constraintLayout = "com.android.support.constraint:constraint-layout:1.0.2"
 
     //arouter
     arouterApi = 'com.alibaba:arouter-api:1.2.2'

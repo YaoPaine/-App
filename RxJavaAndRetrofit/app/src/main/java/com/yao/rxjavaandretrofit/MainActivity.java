@@ -8,8 +8,8 @@ import android.util.Log;
 import android.view.View;
 
 import com.alibaba.android.arouter.launcher.ARouter;
-import com.yao.lib_common.model.UserModel;
-import com.yao.lib_mvp.BaseActivity;
+import com.yao.lib_common.model.entity.UserModel;
+import com.yao.lib_mvp.base.BaseActivity;
 import com.yao.lib_mvp.R2;
 import com.yao.resource.constants.RouterConstants;
 

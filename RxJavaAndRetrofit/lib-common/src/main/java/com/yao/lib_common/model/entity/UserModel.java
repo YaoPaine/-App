@@ -1,4 +1,4 @@
-package com.yao.lib_common.model;
+package com.yao.lib_common.model.entity;
 
 import java.io.Serializable;
 

@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.yao.rxjavaandretrofit">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name="com.yao.rxjavaandretrofit.BaseApplication"
         android:allowBackup="true"
