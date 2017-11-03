@@ -6,7 +6,6 @@ import com.yao.moduled.news.model.NewsModel;
 
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
-import rx.internal.util.SubscriptionList;
 
 /**
  * @Description:
@@ -26,11 +25,6 @@ public class NewsPresenter extends Presenter {
     @Override
     public void subscribe() {
 
-    }
-
-    @Override
-    protected SubscriptionList createSubscriptionList() {
-        return null;
     }
 
     @Override

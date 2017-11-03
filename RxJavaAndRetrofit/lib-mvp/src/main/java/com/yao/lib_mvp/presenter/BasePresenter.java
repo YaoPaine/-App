@@ -7,7 +7,6 @@ import io.reactivex.Observable;
 import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
-import rx.internal.util.SubscriptionList;
 
 /**
  * @Description: 抽象的公用Presenter
@@ -19,10 +18,7 @@ import rx.internal.util.SubscriptionList;
 public abstract class BasePresenter<T extends IView> implements IPresenter<T> {
 
     protected T mMvpView;//所有view
-    protected SubscriptionList mSubscriptions;//rx注册中心
     protected DataRepository mDataCenter;//数据中心
-
-    protected abstract SubscriptionList createSubscriptionList();//dagger后可取缔
 
     /**
      * @return 获取V
@@ -37,7 +33,7 @@ public abstract class BasePresenter<T extends IView> implements IPresenter<T> {
     @Override
     public void attachView(T view) {
         mMvpView = view;
-        mSubscriptions = new SubscriptionList();
+//        mSubscriptions = new SubscriptionList();
         this.mDataCenter = new DataRepository();
     }
 
@@ -48,15 +44,12 @@ public abstract class BasePresenter<T extends IView> implements IPresenter<T> {
     public void detachView() {
         unSubscribe();
         this.mMvpView = null;
-        this.mSubscriptions = null;
         this.mDataCenter = null;
     }
 
     @Override
     public void unSubscribe() {
-        if (mSubscriptions != null) {
-            mSubscriptions.clear();
-        }
+
     }
 
     /**
@@ -65,9 +58,6 @@ public abstract class BasePresenter<T extends IView> implements IPresenter<T> {
     public <N> void addSubscription(Observable<N> observable, Observer<N> subscriber) {
         if (observable == null || subscriber == null)
             throw new RuntimeException("Observable or Observer should not be null");
-        if (mSubscriptions == null) {
-            mSubscriptions = new SubscriptionList();
-        }
 
         observable.subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())

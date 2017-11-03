@@ -4,7 +4,69 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-    <color name="grey_font1">#ff333333</color>
+    <color name="spark_primary_color">#FFFFC107</color>
+    <color name="spark_secondary_color">#FFFF5722</color>
+    <color name="spark_image_tint">#00000000</color>
+
+    <color name="orange">#0084ff</color>
+    <color name="background">#efeff4</color>
+    <color name="toast_bg">#99000000</color>
+
+    <color name="white">#ffffffff</color>
+    <color name="txt_color">#aaaaaa</color>
+    <color name="search_hint_grey">#ffc5c5c5</color>
+    <color name="category_bg">#f5f5f5</color>
+
+    <color name="grey_font4">#c8c8c8</color>
+    <color name="grey_font3">#ff333333</color>
     <color name="grey_font2">#ff666666</color>
-    <color name="grey_font3">#ff999999</color>
+    <color name="grey_font1">#ff999999</color>
+
+    <color name="bg_grey">#fff2f2f2</color>
+    <color name="transparent">#00000000</color>
+    <color name="bg_transparent">#00ffffff</color>
+
+    <color name="home_top_search_bg_white">#d9ffffff</color>
+    <color name="red">#ffff0000</color>
+    <color name="red_FF0000">#ffff0000</color>
+    <color name="red_ac102a">#ffac102a</color>
+    <color name="red_c41230">#ffc41230</color>
+    <color name="heart_primary_color">#DA4439</color>
+    <color name="heart_secondary_color">#8A098C</color>
+    <color name="gray_checkout_font1">#ff999999</color>
+    <color name="gray_checkout_font2">#ff666666</color>
+    <color name="grey">#ffcccccc</color>
+    <color name="grey_2d2d2d">#ff2d2d2d</color>
+    <color name="grey_66999999">#66999999</color>
+    <color name="grey_e0e0e0">#ffe0e0e0</color>
+    <color name="grey_ececec">#ffececec</color>
+    <color name="grey_feed_back">#ffdadada</color>
+    <color name="payment_btn_cod_un_enable">#ffb9b9b9</color>
+    <color name="text_address_label_color">#ff999999</color>
+    <color name="text_address_value_color">#ff333333</color>
+
+    <color name="black">#000000</color>
+    <color name="line">#E6E6E6</color>
+    <color name="price_color">#E93140</color>
+    <color name="red_e93140">#ffe93140</color>
+    <color name="white_press">#FFF7F7F7</color>
+    <color name="invalid_background">#99333333</color>
+    <color name="shop_now_default">#00c89e</color>
+    <color name="shop_button_press">#ff00b48e</color>
+    <color name="button_press">#ff0077e5</color>
+    <color name="bg_edit_email">#46474b</color>
+    <color name="email_text_color">#ffb3b3bb</color>
+    <color name="password_text_color">#9a9b9d</color>
+    <color name="register_bg">#2b2b2c</color>
+    <color name="blue">#FF0069FF</color>
+    <!-- 索引 -->
+    <color name="brand_index_bg">#ffefeff4</color>
+    <color name="brand_index_txt_color">#FF336598</color>
+    <color name="brand_side_bar">#FF007aff</color>
+    <color name="blue_007aff">#007aff</color>
+    <color name="btn_confirm">#F57C55</color>
+    <color name="btn_cancel">#FFD9D9D9</color>
+
+    <color name="blue_e5f1ff">#e5f1ff</color>
+    <color name="blue_83b9f7">#83b9f7</color>
 </resources>

@@ -1,5 +1,7 @@
 package com.yao.lib_mvp.model;
 
+import com.yao.lib_common.network.RxService;
+
 /**
  * @Description:
  * @Author: YaoPaine
@@ -13,12 +15,10 @@ public abstract class BaseModel implements IModel {
      * @param tClass
      * @param <T>
      * @return 返回服务接口对象实例
-     * @throws IllegalAccessException
-     * @throws InstantiationException
      */
-    public <T> T createService(Class<T> tClass) throws IllegalAccessException, InstantiationException {
+    public <T> T createService(Class<T> tClass) {
         validateServiceInterface(tClass);
-        return tClass.newInstance();
+        return RxService.createRetrofit().create(tClass);
     }
 
     public <T> void validateServiceInterface(Class<T> tClass) {

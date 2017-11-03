@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/ic_goods_num_add_clicked" android:state_enabled="true" android:state_pressed="true" />
+    <item android:drawable="@drawable/ic_goods_num_add_enable" android:state_enabled="true" android:state_pressed="false" />
+    <item android:drawable="@drawable/ic_goods_num_add_disable" android:state_enabled="false" />
+
+</selector>
