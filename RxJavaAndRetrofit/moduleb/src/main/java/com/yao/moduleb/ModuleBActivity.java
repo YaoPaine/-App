@@ -1,7 +1,10 @@
 package com.yao.moduleb;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -9,17 +12,25 @@ import android.widget.PopupWindow;
 import android.widget.Toast;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
+import com.google.android.flexbox.FlexboxLayout;
 import com.google.gson.Gson;
 import com.yao.lib_common.model.entity.BaseResult;
 import com.yao.lib_common.network.INewService;
 import com.yao.lib_common.network.RxService;
 import com.yao.lib_mvp.base.BaseActivity;
+import com.yao.moduleb.model.entity.AttrValuesEntity;
+import com.yao.moduleb.model.entity.AttrsEntity;
 import com.yao.moduleb.model.entity.GoodsEntity;
 import com.yao.moduleb.view.TagTextView;
 import com.yao.resource.constants.RouterConstants;
 
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.HashMap;
+import java.util.List;
 
+import butterknife.BindDimen;
 import butterknife.BindView;
 import butterknife.OnClick;
 import io.reactivex.Observer;
@@ -33,8 +44,14 @@ public class ModuleBActivity extends BaseActivity {
     @BindView(R2.id.button_module_b)
     Button btn;
 
-    @BindView(R2.id.tv_attr_name)
-    TagTextView tvAttrName;
+//    @BindView(R2.id.tv_attr_name)
+//    TagTextView tvAttrName;
+
+    @BindView(R2.id.flex_layout)
+    FlexboxLayout mFlexboxlayout;
+
+    @BindDimen(R2.dimen.dp4)
+    int dp4;
 
     private AttributeWindow mWindow;
     private GoodsEntity goodsEntity;
@@ -44,6 +61,24 @@ public class ModuleBActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.module_b_main_activity);
 
+        /*String data = readData().trim();
+        if (!TextUtils.isEmpty(data)) {
+            goodsEntity = new Gson().fromJson(data, GoodsEntity.class);
+        }*/
+        for (int i = 0; i < 10; i++) {
+            TagTextView tagTextView = (TagTextView) LayoutInflater.from(this).inflate(R.layout.module_b_layout_tag_item, null);
+            if (i >= 3 && i % 3 == 0) {
+                tagTextView.setText("这是第[" + i + "]个tag");
+            } else if (i % 2 == 0) {
+                tagTextView.setText("这是[" + i + "]");
+            } else {
+                tagTextView.setText("[" + i + "]");
+            }
+
+            FlexboxLayout.LayoutParams layoutParams = new FlexboxLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+            layoutParams.setMargins(dp4, dp4, dp4, dp4);
+            mFlexboxlayout.addView(tagTextView, layoutParams);
+        }
         HashMap<String, Object> hashMap = new HashMap<>();
         hashMap.put("productId", 46);
         hashMap.put("phoneId", "355905070668067");
@@ -68,10 +103,65 @@ public class ModuleBActivity extends BaseActivity {
 
                     @Override
                     public void onNext(BaseResult<String> stringBaseResult) {
-//                        Log.d(TAG, "" + stringBaseResult.getData());
+                        Log.e(TAG, "onNext: " + stringBaseResult.getMessage());
                         if (stringBaseResult.getCode() == 0) {
                             String data = stringBaseResult.getData();
                             goodsEntity = new Gson().fromJson(data, GoodsEntity.class);
+
+                            List<AttrsEntity> attrs = goodsEntity.getAttrs();
+                            for (AttrsEntity attrsEntity : attrs) {
+                                int keyId = attrsEntity.getKeyId();
+                                List<AttrValuesEntity> attrValues = attrsEntity.getAttrValues();
+
+                                if (keyId == 5) {
+                                    AttrValuesEntity valuesEntity = new AttrValuesEntity();
+                                    valuesEntity.setValue("red");
+                                    valuesEntity.setValueId(20);
+                                    attrValues.add(valuesEntity);
+
+                                    AttrValuesEntity valuesEntity2 = new AttrValuesEntity();
+                                    valuesEntity2.setValue("blue");
+                                    valuesEntity2.setValueId(21);
+                                    attrValues.add(valuesEntity2);
+
+                                } else if (keyId == 6) {
+                                    AttrValuesEntity valuesEntity = new AttrValuesEntity();
+                                    valuesEntity.setValue("内存: 64g");
+                                    valuesEntity.setValueId(389);
+                                    attrValues.add(valuesEntity);
+
+                                    AttrValuesEntity valuesEntity2 = new AttrValuesEntity();
+                                    valuesEntity2.setValue("内存: 128g");
+                                    valuesEntity2.setValueId(390);
+                                    attrValues.add(valuesEntity2);
+
+                                    AttrValuesEntity valuesEntity3 = new AttrValuesEntity();
+                                    valuesEntity3.setValue("内存:8g");
+                                    valuesEntity3.setValueId(391);
+                                    attrValues.add(valuesEntity3);
+
+                                    AttrValuesEntity valuesEntity4 = new AttrValuesEntity();
+                                    valuesEntity4.setValue("内存: 258g");
+                                    valuesEntity4.setValueId(392);
+                                    attrValues.add(valuesEntity4);
+
+                                } else if (keyId == 333) {
+                                    AttrValuesEntity valuesEntity = new AttrValuesEntity();
+                                    valuesEntity.setValue("RAM: 16g");
+                                    valuesEntity.setValueId(389);
+                                    attrValues.add(valuesEntity);
+
+                                    AttrValuesEntity valuesEntity2 = new AttrValuesEntity();
+                                    valuesEntity2.setValue("RAM:  64g");
+                                    valuesEntity2.setValueId(389);
+                                    attrValues.add(valuesEntity2);
+
+                                    AttrValuesEntity valuesEntity3 = new AttrValuesEntity();
+                                    valuesEntity3.setValue("RAM:  128g");
+                                    valuesEntity3.setValueId(389);
+                                    attrValues.add(valuesEntity3);
+                                }
+                            }
                         } else {
                             Toast.makeText(ModuleBActivity.this, stringBaseResult.getMessage(), Toast.LENGTH_SHORT).show();
                         }
@@ -79,7 +169,7 @@ public class ModuleBActivity extends BaseActivity {
 
                     @Override
                     public void onError(Throwable e) {
-
+                        Log.e(TAG, "onError: " + e);
                     }
 
                     @Override
@@ -126,5 +216,38 @@ public class ModuleBActivity extends BaseActivity {
         WindowManager.LayoutParams attributes = window.getAttributes();
         attributes.alpha = alpha;
         window.setAttributes(attributes);
+    }
+
+    private String readData() {
+        InputStream inputStream = null;
+        ByteArrayOutputStream bos = null;
+        try {
+            inputStream = getAssets().open("data.txt");
+            bos = new ByteArrayOutputStream();
+            byte[] buffer = new byte[1024];
+            while (inputStream.read(buffer) != -1) {
+                bos.write(buffer, 0, buffer.length);
+            }
+            bos.flush();
+            return new String(bos.toByteArray());
+        } catch (IOException e) {
+
+        } finally {
+            if (inputStream != null) {
+                try {
+                    inputStream.close();
+                } catch (IOException e) {
+                }
+            }
+
+            if (bos != null) {
+                try {
+                    bos.close();
+                } catch (IOException e) {
+                }
+            }
+        }
+
+        return "";
     }
 }

@@ -15,19 +15,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />-->
 
-    <com.yao.moduleb.view.TagTextView
-        android:id="@+id/tv_attr_name"
-        android:layout_width="wrap_content"
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/flex_layout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/selector_attribute_tag"
-        android:gravity="center"
-        android:paddingBottom="@dimen/dp5"
-        android:paddingEnd="@dimen/dp12"
-        android:paddingStart="@dimen/dp12"
-        android:paddingTop="@dimen/dp5"
-        android:text="Attribute name"
-        android:textColor="@drawable/selector_text_color"
-        android:textSize="@dimen/sp16" />
+        android:paddingEnd="@dimen/dp10"
+        android:paddingStart="@dimen/dp10"
+        app:flexDirection="row"
+        app:flexWrap="wrap"
+        app:justifyContent="flex_start" />
 
     <Button
         android:id="@+id/button_module_b"

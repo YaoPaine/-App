@@ -18,7 +18,7 @@ import android.widget.PopupWindow;
 import com.yao.moduleb.model.entity.AttrsEntity;
 import com.yao.moduleb.model.entity.GoodsEntity;
 import com.yao.moduleb.model.entity.SkuEntity;
-import com.yao.moduleb.presenter.AttributeAdapter;
+import com.yao.moduleb.presenter.AttrAdapter;
 
 import java.util.List;
 
@@ -43,7 +43,6 @@ public class AttributeWindow extends PopupWindow {
 
     @BindView(R2.id.rv_attribute)
     RecyclerView mRecyclerView;
-
 
     public AttributeWindow(Context context) {
         View view = LayoutInflater.from(context).inflate(R.layout.module_b_window_goods_property, null);
@@ -79,7 +78,7 @@ public class AttributeWindow extends PopupWindow {
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(context);
         mRecyclerView.setLayoutManager(layoutManager);
-        AttributeAdapter adapter = new AttributeAdapter(context);
+        AttrAdapter adapter = new AttrAdapter(context);
         mRecyclerView.setAdapter(adapter);
     }
 
@@ -98,7 +97,7 @@ public class AttributeWindow extends PopupWindow {
      * @param sku         默认显示的sku
      */
     public void initWindow(GoodsEntity goodsEntity, @Nullable String sku) {
-        AttributeAdapter adapter = (AttributeAdapter) mRecyclerView.getAdapter();
+        AttrAdapter adapter = (AttrAdapter) mRecyclerView.getAdapter();
 
         /**
          *查找出默认的sku

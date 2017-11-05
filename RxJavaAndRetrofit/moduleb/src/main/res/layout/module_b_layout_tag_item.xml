@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.yao.moduleb.view.TagTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tag_text_view"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/dp5"
+    android:layout_marginStart="@dimen/dp5"
     android:background="@drawable/selector_attribute_tag"
     android:gravity="center"
     android:paddingBottom="@dimen/dp5"
     android:paddingEnd="@dimen/dp12"
     android:paddingStart="@dimen/dp12"
     android:paddingTop="@dimen/dp5"
-    android:text="Attribute name"
     android:textColor="@drawable/selector_text_color"
     android:textSize="@dimen/sp16" />
