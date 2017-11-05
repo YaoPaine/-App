@@ -21,12 +21,15 @@ import com.yao.lib_mvp.base.BaseActivity;
 import com.yao.moduleb.model.entity.AttrValuesEntity;
 import com.yao.moduleb.model.entity.AttrsEntity;
 import com.yao.moduleb.model.entity.GoodsEntity;
+import com.yao.moduleb.model.entity.SkuAttrEntity;
+import com.yao.moduleb.model.entity.SkuEntity;
 import com.yao.moduleb.view.TagTextView;
 import com.yao.resource.constants.RouterConstants;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -148,19 +151,73 @@ public class ModuleBActivity extends BaseActivity {
                                 } else if (keyId == 333) {
                                     AttrValuesEntity valuesEntity = new AttrValuesEntity();
                                     valuesEntity.setValue("RAM: 16g");
-                                    valuesEntity.setValueId(389);
+                                    valuesEntity.setValueId(285);
                                     attrValues.add(valuesEntity);
 
                                     AttrValuesEntity valuesEntity2 = new AttrValuesEntity();
                                     valuesEntity2.setValue("RAM:  64g");
-                                    valuesEntity2.setValueId(389);
+                                    valuesEntity2.setValueId(185);
                                     attrValues.add(valuesEntity2);
 
                                     AttrValuesEntity valuesEntity3 = new AttrValuesEntity();
                                     valuesEntity3.setValue("RAM:  128g");
-                                    valuesEntity3.setValueId(389);
+                                    valuesEntity3.setValueId(85);
                                     attrValues.add(valuesEntity3);
                                 }
+                            }
+
+                            List<SkuEntity> skus = goodsEntity.getSkus();
+                            for (int i = 0; i < 8; i++) {
+                                SkuEntity skuEntity = new SkuEntity();
+
+                                List<SkuAttrEntity> attrEntities = new ArrayList<>();
+                                SkuAttrEntity skuAttrEntity1 = new SkuAttrEntity();
+                                skuAttrEntity1.setKeyId(5);
+
+                                SkuAttrEntity skuAttrEntity2 = new SkuAttrEntity();
+                                skuAttrEntity2.setKeyId(6);
+
+                                SkuAttrEntity skuAttrEntity3 = new SkuAttrEntity();
+                                skuAttrEntity3.setKeyId(333);
+
+                                if (i == 0) {
+                                    skuAttrEntity1.setValueId(19);
+                                    skuAttrEntity2.setValueId(388);
+                                    skuAttrEntity3.setValueId(285);
+                                } else if (i == 1) {
+                                    skuAttrEntity1.setValueId(19);
+                                    skuAttrEntity2.setValueId(388);
+                                    skuAttrEntity3.setValueId(185);
+                                } else if (i == 2) {
+                                    skuAttrEntity1.setValueId(19);
+                                    skuAttrEntity2.setValueId(389);
+                                    skuAttrEntity3.setValueId(285);
+                                } else if (i == 3) {
+                                    skuAttrEntity1.setValueId(19);
+                                    skuAttrEntity2.setValueId(389);
+                                    skuAttrEntity3.setValueId(185);
+                                } else if (i == 4) {
+                                    skuAttrEntity1.setValueId(19);
+                                    skuAttrEntity2.setValueId(390);
+                                    skuAttrEntity3.setValueId(385);
+                                } else if (i == 5) {
+                                    skuAttrEntity1.setValueId(21);
+                                    skuAttrEntity2.setValueId(388);
+                                    skuAttrEntity3.setValueId(385);
+                                } else if (i == 6) {
+                                    skuAttrEntity1.setValueId(21);
+                                    skuAttrEntity2.setValueId(389);
+                                    skuAttrEntity3.setValueId(285);
+                                } else if (i == 7) {
+                                    skuAttrEntity1.setValueId(21);
+                                    skuAttrEntity2.setValueId(390);
+                                    skuAttrEntity3.setValueId(185);
+                                }
+                                attrEntities.add(skuAttrEntity1);
+                                attrEntities.add(skuAttrEntity2);
+                                attrEntities.add(skuAttrEntity3);
+                                skuEntity.setAttrs(attrEntities);
+                                skus.add(skuEntity);
                             }
                         } else {
                             Toast.makeText(ModuleBActivity.this, stringBaseResult.getMessage(), Toast.LENGTH_SHORT).show();

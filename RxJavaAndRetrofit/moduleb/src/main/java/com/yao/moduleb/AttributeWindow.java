@@ -103,6 +103,7 @@ public class AttributeWindow extends PopupWindow {
          *查找出默认的sku
          */
         List<SkuEntity> skuEntityList = goodsEntity.getSkus();
+        adapter.setTotalSku(skuEntityList);
         SkuEntity defaultSku = skuEntityList.get(0);
         if (!TextUtils.isEmpty(sku))
             for (SkuEntity skuEntity : skuEntityList) {
@@ -111,9 +112,9 @@ public class AttributeWindow extends PopupWindow {
                     break;
                 }
             }
-        adapter.setDefaultSku(defaultSku);
+        adapter.setDefaultSku(defaultSku.getSku());
 
-        List<AttrsEntity> attrsEntityList = goodsEntity.getAttrs();
+        List<AttrsEntity> attrsEntityList = goodsEntity.getAttrs();//设置属性
         adapter.setAttrsEntities(attrsEntityList);
 
     }
