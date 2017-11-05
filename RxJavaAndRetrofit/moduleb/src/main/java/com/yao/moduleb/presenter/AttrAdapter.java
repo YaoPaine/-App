@@ -6,9 +6,9 @@ import android.util.SparseArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
 import android.widget.TextView;
 
+import com.google.android.flexbox.FlexboxLayout;
 import com.yao.moduleb.R;
 import com.yao.moduleb.R2;
 import com.yao.moduleb.model.entity.AttrValuesEntity;
@@ -16,7 +16,6 @@ import com.yao.moduleb.model.entity.AttrsEntity;
 import com.yao.moduleb.model.entity.SkuAttrEntity;
 import com.yao.moduleb.model.entity.SkuEntity;
 import com.yao.moduleb.view.TagTextView;
-import com.zhy.view.flowlayout.FlowLayout;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -50,7 +49,7 @@ public class AttrAdapter extends RecyclerView.Adapter<AttrAdapter.AttrHolder> {
 
     @Override
     public AttrHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
-        View view = LayoutInflater.from(mContext).inflate(R.layout.module_b_layout_attr_tag, null);
+        View view = LayoutInflater.from(mContext).inflate(R.layout.module_b_layout_attr_tag, viewGroup, false);
         return new AttrHolder(view);
     }
 
@@ -82,11 +81,11 @@ public class AttrAdapter extends RecyclerView.Adapter<AttrAdapter.AttrHolder> {
         @BindView(R2.id.tv_attribute_name)
         TextView mTvName;
 
-        @BindView(R2.id.flow_layout)
-        FlowLayout mFlowLayout;
+//        @BindView(R2.id.flow_layout)
+//        FlowLayout mFlowLayout;
 
-//        @BindView(R2.id.flex_layout)
-//        FlexboxLayout mFlexBoxLayout;
+        @BindView(R2.id.flex_layout)
+        FlexboxLayout mFlexBoxLayout;
 
         @BindDimen(R2.dimen.dp4)
         int dp4;
@@ -113,12 +112,15 @@ public class AttrAdapter extends RecyclerView.Adapter<AttrAdapter.AttrHolder> {
                 AttrValuesEntity attrValuesEntity = attrValues.get(i);
                 int attrValueId = attrValuesEntity.getValueId();//属性对应的value
                 String value = attrValuesEntity.getValue();
+
                 TagTextView tagTextView = (TagTextView) LayoutInflater.from(mContext).inflate(R.layout.module_b_layout_tag_item, null);
                 tagTextView.setText(value);
-                tagTextView.setPadding(dp12, dp4, dp12, dp4);
-                FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
+
+                FlexboxLayout.LayoutParams layoutParams = new FlexboxLayout.LayoutParams(FlexboxLayout.LayoutParams.WRAP_CONTENT
+                        , FlexboxLayout.LayoutParams.WRAP_CONTENT);
                 layoutParams.setMargins(dp4, dp4, dp4, dp4);
-                mFlowLayout.addView(tagTextView, i, layoutParams);
+                mFlexBoxLayout.addView(tagTextView, layoutParams);
+
                 for (SkuAttrEntity skuAttrEntity : attrs) {
                     int keyId = skuAttrEntity.getKeyId();
                     if (attrKeyId != keyId) continue;

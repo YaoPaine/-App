@@ -13,8 +13,18 @@
         android:padding="@dimen/dp10"
         android:text="属性名" />
 
-    <com.zhy.view.flowlayout.FlowLayout
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/flex_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/dp10"
+        android:paddingStart="@dimen/dp10"
+        app:flexDirection="row"
+        app:flexWrap="wrap"
+        app:justifyContent="flex_start" />
+
+    <!--<com.zhy.view.flowlayout.FlowLayout
         android:id="@+id/flow_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content" />-->
 </LinearLayout>

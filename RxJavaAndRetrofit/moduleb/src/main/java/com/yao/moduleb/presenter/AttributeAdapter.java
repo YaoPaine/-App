@@ -12,6 +12,7 @@ import com.yao.moduleb.R2;
 import com.yao.moduleb.model.entity.AttrValuesEntity;
 import com.yao.moduleb.model.entity.AttrsEntity;
 import com.yao.moduleb.model.entity.SkuEntity;
+import com.yao.moduleb.view.TagTextView;
 import com.zhy.view.flowlayout.FlowLayout;
 import com.zhy.view.flowlayout.TagAdapter;
 import com.zhy.view.flowlayout.TagFlowLayout;
@@ -89,7 +90,7 @@ public class AttributeAdapter extends RecyclerView.Adapter<AttributeAdapter.Attr
 
                 @Override
                 public View getView(FlowLayout flowLayout, int i, AttrValuesEntity attrValuesEntity) {
-                    TextView view = (TextView) LayoutInflater.from(mContext).inflate(R.layout.module_b_layout_tag_item, flowLayout, false);
+                    TagTextView view = (TagTextView) LayoutInflater.from(mContext).inflate(R.layout.module_b_layout_tag_item, flowLayout, false);
 //                    Log.e("TAG", "getView: " + i);
                     if (i == 0) {
                         view.setEnabled(false);
