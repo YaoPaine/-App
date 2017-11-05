@@ -15,6 +15,7 @@ import com.yao.lib_common.network.INewService;
 import com.yao.lib_common.network.RxService;
 import com.yao.lib_mvp.base.BaseActivity;
 import com.yao.moduleb.model.entity.GoodsEntity;
+import com.yao.moduleb.view.TagTextView;
 import com.yao.resource.constants.RouterConstants;
 
 import java.util.HashMap;
@@ -31,6 +32,9 @@ public class ModuleBActivity extends BaseActivity {
 
     @BindView(R2.id.button_module_b)
     Button btn;
+
+    @BindView(R2.id.tv_attr_name)
+    TagTextView tvAttrName;
 
     private AttributeWindow mWindow;
     private GoodsEntity goodsEntity;

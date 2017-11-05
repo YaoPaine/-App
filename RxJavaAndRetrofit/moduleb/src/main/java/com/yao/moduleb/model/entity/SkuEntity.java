@@ -9,7 +9,7 @@ import java.util.List;
  * @Version:
  */
 
-public class SkusEntity {
+public class SkuEntity {
 
     private int skuId;
     private int quantity;

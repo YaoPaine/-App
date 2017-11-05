@@ -3,15 +3,24 @@ package com.yao.moduleb;
 import android.content.Context;
 import android.graphics.drawable.BitmapDrawable;
 import android.support.annotation.Nullable;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 
+import com.yao.moduleb.model.entity.AttrsEntity;
 import com.yao.moduleb.model.entity.GoodsEntity;
+import com.yao.moduleb.model.entity.SkuEntity;
+import com.yao.moduleb.presenter.AttributeAdapter;
+
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -28,6 +37,12 @@ public class AttributeWindow extends PopupWindow {
 
     @BindView(R2.id.ll_popup_window)
     LinearLayout llPopupWindow;
+
+    @BindView(R2.id.window_goods_detail_img)
+    ImageView ivGoods;
+
+    @BindView(R2.id.rv_attribute)
+    RecyclerView mRecyclerView;
 
 
     public AttributeWindow(Context context) {
@@ -61,6 +76,11 @@ public class AttributeWindow extends PopupWindow {
                 return true;
             }
         });
+
+        LinearLayoutManager layoutManager = new LinearLayoutManager(context);
+        mRecyclerView.setLayoutManager(layoutManager);
+        AttributeAdapter adapter = new AttributeAdapter(context);
+        mRecyclerView.setAdapter(adapter);
     }
 
     @OnClick({R2.id.iv_window_close})
@@ -78,7 +98,24 @@ public class AttributeWindow extends PopupWindow {
      * @param sku         默认显示的sku
      */
     public void initWindow(GoodsEntity goodsEntity, @Nullable String sku) {
+        AttributeAdapter adapter = (AttributeAdapter) mRecyclerView.getAdapter();
 
+        /**
+         *查找出默认的sku
+         */
+        List<SkuEntity> skuEntityList = goodsEntity.getSkus();
+        SkuEntity defaultSku = skuEntityList.get(0);
+        if (!TextUtils.isEmpty(sku))
+            for (SkuEntity skuEntity : skuEntityList) {
+                if (TextUtils.equals(skuEntity.getSku(), sku)) {
+                    defaultSku = skuEntity;
+                    break;
+                }
+            }
+        adapter.setDefaultSku(defaultSku);
+
+        List<AttrsEntity> attrsEntityList = goodsEntity.getAttrs();
+        adapter.setAttrsEntities(attrsEntityList);
 
     }
 }

@@ -53,7 +53,7 @@ public class GoodsEntity {
     private CommentContentEntity commentContent;
     private List<AttrsEntity> attrs;
     private List<PicturesEntity> pictures;
-    private List<SkusEntity> skus;
+    private List<SkuEntity> skus;
     private List<SpecificEntity> specific;
 
     public int getId() {
@@ -184,11 +184,11 @@ public class GoodsEntity {
         this.pictures = pictures;
     }
 
-    public List<SkusEntity> getSkus() {
+    public List<SkuEntity> getSkus() {
         return skus;
     }
 
-    public void setSkus(List<SkusEntity> skus) {
+    public void setSkus(List<SkuEntity> skus) {
         this.skus = skus;
     }
 

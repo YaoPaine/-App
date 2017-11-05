@@ -27,4 +27,51 @@ public class AttrsEntity {
     private boolean mainAttrFlag;
     private List<AttrValuesEntity> attrValues;
 
+    public int getKeyId() {
+        return keyId;
+    }
+
+    public void setKeyId(int keyId) {
+        this.keyId = keyId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getKeySort() {
+        return keySort;
+    }
+
+    public void setKeySort(int keySort) {
+        this.keySort = keySort;
+    }
+
+    public int getType() {
+        return type;
+    }
+
+    public void setType(int type) {
+        this.type = type;
+    }
+
+    public boolean isMainAttrFlag() {
+        return mainAttrFlag;
+    }
+
+    public void setMainAttrFlag(boolean mainAttrFlag) {
+        this.mainAttrFlag = mainAttrFlag;
+    }
+
+    public List<AttrValuesEntity> getAttrValues() {
+        return attrValues;
+    }
+
+    public void setAttrValues(List<AttrValuesEntity> attrValues) {
+        this.attrValues = attrValues;
+    }
 }
