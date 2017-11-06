@@ -182,36 +182,60 @@ public class ModuleBActivity extends BaseActivity {
 
                                 if (i == 0) {
                                     skuAttrEntity1.setValueId(19);
+                                    skuAttrEntity1.setValueName("black");
                                     skuAttrEntity2.setValueId(388);
+                                    skuAttrEntity2.setValueName("8g");
                                     skuAttrEntity3.setValueId(285);
+                                    skuAttrEntity3.setValueName("RAM: 16g");
                                 } else if (i == 1) {
                                     skuAttrEntity1.setValueId(19);
+                                    skuAttrEntity1.setValueName("black");
                                     skuAttrEntity2.setValueId(388);
+                                    skuAttrEntity2.setValueName("8g");
                                     skuAttrEntity3.setValueId(185);
+                                    skuAttrEntity3.setValueName("RAM:  64g");
                                 } else if (i == 2) {
                                     skuAttrEntity1.setValueId(19);
+                                    skuAttrEntity1.setValueName("black");
                                     skuAttrEntity2.setValueId(389);
+                                    skuAttrEntity2.setValueName("内存: 64g");
                                     skuAttrEntity3.setValueId(285);
+                                    skuAttrEntity3.setValueName("RAM:  16g");
                                 } else if (i == 3) {
                                     skuAttrEntity1.setValueId(19);
+                                    skuAttrEntity1.setValueName("black");
                                     skuAttrEntity2.setValueId(389);
+                                    skuAttrEntity2.setValueName("内存: 64g");
                                     skuAttrEntity3.setValueId(185);
+                                    skuAttrEntity3.setValueName("RAM:  64g");
                                 } else if (i == 4) {
                                     skuAttrEntity1.setValueId(19);
+                                    skuAttrEntity1.setValueName("black");
                                     skuAttrEntity2.setValueId(390);
+                                    skuAttrEntity2.setValueName("内存: 128g");
                                     skuAttrEntity3.setValueId(385);
+                                    skuAttrEntity3.setValueName("1g");
                                 } else if (i == 5) {
                                     skuAttrEntity1.setValueId(21);
+                                    skuAttrEntity1.setValueName("blue");
                                     skuAttrEntity2.setValueId(388);
+                                    skuAttrEntity2.setValueName("8g");
                                     skuAttrEntity3.setValueId(385);
+                                    skuAttrEntity3.setValueName("1g");
                                 } else if (i == 6) {
                                     skuAttrEntity1.setValueId(21);
+                                    skuAttrEntity1.setValueName("blue");
                                     skuAttrEntity2.setValueId(389);
+                                    skuAttrEntity2.setValueName("内存: 64g");
                                     skuAttrEntity3.setValueId(285);
+                                    skuAttrEntity3.setValueName("RAM:  16g");
                                 } else if (i == 7) {
                                     skuAttrEntity1.setValueId(21);
+                                    skuAttrEntity1.setValueName("blue");
                                     skuAttrEntity2.setValueId(390);
+                                    skuAttrEntity2.setValueName("内存: 128g");
                                     skuAttrEntity3.setValueId(185);
+                                    skuAttrEntity3.setValueName("RAM:  64g");
                                 }
                                 attrEntities.add(skuAttrEntity1);
                                 attrEntities.add(skuAttrEntity2);

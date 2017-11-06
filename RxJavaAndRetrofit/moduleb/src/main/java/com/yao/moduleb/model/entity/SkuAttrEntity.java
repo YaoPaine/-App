@@ -71,4 +71,9 @@ public class SkuAttrEntity {
     public void setMainAttrFlag(boolean mainAttrFlag) {
         this.mainAttrFlag = mainAttrFlag;
     }
+
+    @Override
+    public String toString() {
+        return valueName;
+    }
 }

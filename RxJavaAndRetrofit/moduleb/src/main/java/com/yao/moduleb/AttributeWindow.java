@@ -104,15 +104,12 @@ public class AttributeWindow extends PopupWindow {
          */
         List<SkuEntity> skuEntityList = goodsEntity.getSkus();
         adapter.setTotalSku(skuEntityList);
-        SkuEntity defaultSku = skuEntityList.get(0);
-        if (!TextUtils.isEmpty(sku))
-            for (SkuEntity skuEntity : skuEntityList) {
-                if (TextUtils.equals(skuEntity.getSku(), sku)) {
-                    defaultSku = skuEntity;
-                    break;
-                }
-            }
-        adapter.setDefaultSku(defaultSku.getSku());
+
+        if (TextUtils.isEmpty(sku)) {
+            SkuEntity defaultSku = skuEntityList.get(0);
+            sku = defaultSku.getSku();
+        }
+        adapter.setDefaultSku(sku);
 
         List<AttrsEntity> attrsEntityList = goodsEntity.getAttrs();//设置属性
         adapter.setAttrsEntities(attrsEntityList);
