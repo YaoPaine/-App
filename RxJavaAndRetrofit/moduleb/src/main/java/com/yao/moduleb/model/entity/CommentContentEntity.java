@@ -17,39 +17,7 @@ public class CommentContentEntity {
      */
 
     private boolean hasComment;
-    private int averageStar;
+    private double averageStar;
     private int totalComments;
     private Object comments;
-
-    public boolean isHasComment() {
-        return hasComment;
-    }
-
-    public void setHasComment(boolean hasComment) {
-        this.hasComment = hasComment;
-    }
-
-    public int getAverageStar() {
-        return averageStar;
-    }
-
-    public void setAverageStar(int averageStar) {
-        this.averageStar = averageStar;
-    }
-
-    public int getTotalComments() {
-        return totalComments;
-    }
-
-    public void setTotalComments(int totalComments) {
-        this.totalComments = totalComments;
-    }
-
-    public Object getComments() {
-        return comments;
-    }
-
-    public void setComments(Object comments) {
-        this.comments = comments;
-    }
 }

@@ -243,6 +243,18 @@ public class ModuleBActivity extends BaseActivity {
                                 skuEntity.setAttrs(attrEntities);
                                 skus.add(skuEntity);
                             }
+
+                            for (SkuEntity skuEntity : skus) {
+                                StringBuilder builder = new StringBuilder();
+                                List<SkuAttrEntity> skuEntityAttrs = skuEntity.getAttrs();
+                                for (SkuAttrEntity skuAttrEntity : skuEntityAttrs) {
+                                    int keyId = skuAttrEntity.getKeyId();
+                                    int valueId = skuAttrEntity.getValueId();
+                                    builder.append("#").append(keyId).append("#").append(valueId);
+                                }
+                                skuEntity.setSkuCombination(builder.toString());
+                            }
+
                         } else {
                             Toast.makeText(ModuleBActivity.this, stringBaseResult.getMessage(), Toast.LENGTH_SHORT).show();
                         }

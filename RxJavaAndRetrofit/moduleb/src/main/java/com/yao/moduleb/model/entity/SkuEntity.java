@@ -19,6 +19,7 @@ public class SkuEntity {
     private double discount;
     private int activityStatus;
     private List<SkuAttrEntity> attrs;
+    private String skuCombination;
 
     public int getSkuId() {
         return skuId;
@@ -82,5 +83,13 @@ public class SkuEntity {
 
     public void setAttrs(List<SkuAttrEntity> attrs) {
         this.attrs = attrs;
+    }
+
+    public String getSkuCombination() {
+        return skuCombination;
+    }
+
+    public void setSkuCombination(String skuCombination) {
+        this.skuCombination = skuCombination;
     }
 }
