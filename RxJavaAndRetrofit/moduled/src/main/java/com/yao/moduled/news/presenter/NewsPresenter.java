@@ -1,11 +1,7 @@
 package com.yao.moduled.news.presenter;
 
-import com.yao.lib_common.model.entity.news.NewsRequestModel;
 import com.yao.moduled.news.model.Model;
 import com.yao.moduled.news.model.NewsModel;
-
-import io.reactivex.Observer;
-import io.reactivex.disposables.Disposable;
 
 /**
  * @Description:
@@ -29,27 +25,6 @@ public class NewsPresenter extends Presenter {
 
     @Override
     public void loadNews(int type, int page) {
-        addSubscription(mModel.loadNews("goods/detailNew", type), new Observer<NewsRequestModel>() {
-
-            @Override
-            public void onSubscribe(Disposable d) {
-                getMvpView().showLoading();
-            }
-
-            @Override
-            public void onNext(NewsRequestModel newsRequestModel) {
-                getMvpView().addNews(newsRequestModel.getNewsBeanList());
-            }
-
-            @Override
-            public void onError(Throwable e) {
-                getMvpView().showErrorMsg(e.getMessage(), e.toString());
-            }
-
-            @Override
-            public void onComplete() {
-                getMvpView().hideLoading();
-            }
-        });
+//        addSubscription(mModel.loadNews("goods/detailNew", type), new ApiCallBack<String>(){});
     }
 }

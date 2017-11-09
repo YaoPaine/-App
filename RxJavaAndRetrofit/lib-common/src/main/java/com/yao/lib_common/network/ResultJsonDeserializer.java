@@ -7,7 +7,6 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.yao.lib_common.model.entity.BaseResult;
 
-import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 
 /**
@@ -17,21 +16,22 @@ import java.lang.reflect.Type;
  * @Version:
  */
 
-public class ResultJsonDeserializer implements JsonDeserializer<BaseResult<?>> {
+public class ResultJsonDeserializer implements JsonDeserializer<BaseResult<String>> {
 
     @Override
-    public BaseResult<?> deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException {
-        BaseResult baseResult = new BaseResult();
+    public BaseResult<String> deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException {
+        BaseResult<String> baseResult = new BaseResult<>();
         if (json.isJsonObject()) {
             JsonObject jsonObject = json.getAsJsonObject();
             int code = jsonObject.get("code").getAsInt();
             baseResult.setCode(code);
             baseResult.setMessage(jsonObject.get("message").getAsString());
-            if (code == 0) {
+            if (code == BaseResult.getSuccessCod()) {
                 JsonElement data = jsonObject.get("data");
                 if (data != null) {
-                    ParameterizedType parameterizedType = (ParameterizedType) typeOfT;
-                    Type type = parameterizedType.getActualTypeArguments()[0];
+//                    ParameterizedType parameterizedType = (ParameterizedType) typeOfT;
+//                    Type type = parameterizedType.getActualTypeArguments()[0];
+//                    context.deserialize(data, ((ParameterizedType) typeOfT).getActualTypeArguments()[0]);//获取定义的泛型
                     baseResult.setData(data.toString());
                 }
 //                baseResult.setData(context.deserialize(data, type));

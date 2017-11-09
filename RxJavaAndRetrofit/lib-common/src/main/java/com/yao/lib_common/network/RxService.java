@@ -40,9 +40,9 @@ public class RxService {
                             .connectTimeout(CONN_TIMEOUT, TimeUnit.SECONDS)
                             .build();
 
-                    Gson gson = new GsonBuilder().registerTypeHierarchyAdapter(BaseResult.class,
-                            new ResultJsonDeserializer())
-                            .create();
+                    Gson gson = new GsonBuilder()
+                            .registerTypeHierarchyAdapter(BaseResult.class,
+                                    new ResultJsonDeserializer()).create();
 
                     mRetrofit = new Retrofit.Builder()
                             .client(okHttpClient)

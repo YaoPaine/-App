@@ -8,6 +8,8 @@ package com.yao.lib_common.model.entity;
  */
 
 public class BaseResult<T> {
+    private final static int successCod = 0;
+    
     private int code;
     private String message;
     private T data;
@@ -34,6 +36,10 @@ public class BaseResult<T> {
 
     public void setData(T data) {
         this.data = data;
+    }
+
+    public static int getSuccessCod() {
+        return successCod;
     }
 
     @Override

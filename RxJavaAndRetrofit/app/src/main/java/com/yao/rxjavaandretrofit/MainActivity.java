@@ -9,22 +9,19 @@ import android.view.View;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.google.gson.Gson;
-import com.yao.lib_common.model.entity.BaseResult;
 import com.yao.lib_common.model.entity.UserModel;
+import com.yao.lib_common.observer.ApiCallBack;
 import com.yao.lib_common.network.INewService;
 import com.yao.lib_common.network.RxService;
 import com.yao.lib_mvp.R2;
 import com.yao.lib_mvp.base.BaseActivity;
+import com.yao.moduleb.model.entity.GoodsEntity;
 import com.yao.resource.constants.RouterConstants;
 
 import java.util.HashMap;
 import java.util.Locale;
 
 import butterknife.OnClick;
-import io.reactivex.Observer;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.disposables.Disposable;
-import io.reactivex.schedulers.Schedulers;
 
 public class MainActivity extends BaseActivity {
 
@@ -63,7 +60,7 @@ public class MainActivity extends BaseActivity {
         }
 
         HashMap<String, Object> hashMap = new HashMap<>();
-        hashMap.put("productId", 3900);
+        hashMap.put("productId", 46);
         hashMap.put("phoneId", "355905070668067");
         hashMap.put("accessToken", "0b4d095d-24cb-4350-a027-4eb0dd0b002b");
         hashMap.put("languageId", 1);
@@ -74,30 +71,20 @@ public class MainActivity extends BaseActivity {
         hashMap.put("osVersionCode", 24);
         hashMap.put("chn", "google");
         hashMap.put("uuid", "a2adc10d-94a3-41b0-bd6b-bc4da76bad58");
-//        String detail = new Gson().toJson(hashMap);
         RxService.createRetrofit().create(INewService.class)
-                .postWithMapParam("home/content", hashMap)
-                .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Observer<BaseResult<String>>() {
+                .postWithMapParam("goods/detailNew", hashMap)
+                .compose(new Transformer<>(GoodsEntity.class))
+                .subscribe(new ApiCallBack<GoodsEntity>() {
                     @Override
-                    public void onSubscribe(Disposable d) {
-                        Log.e(TAG, "onSubscribe: ");
+                    public void onSuccessIsNull() {
+                        super.onSuccessIsNull();
+                        Log.e(TAG, "onSuccessIsNull: " + Thread.currentThread().getName());
                     }
 
                     @Override
-                    public void onNext(BaseResult<String> stringBaseResult) {
-                        Log.e(TAG, "onNext: " + stringBaseResult.getData());
-                    }
-
-                    @Override
-                    public void onError(Throwable e) {
-                        Log.e(TAG, "onError: " + e);
-                    }
-
-                    @Override
-                    public void onComplete() {
-                        Log.e(TAG, "onComplete: ");
+                    public void onSuccessNotNull(GoodsEntity goodsEntity) {
+                        Log.e(TAG, "onSuccessNotNull: " + Thread.currentThread().getName());
+                        super.onSuccessNotNull(goodsEntity);
                     }
                 });
     }

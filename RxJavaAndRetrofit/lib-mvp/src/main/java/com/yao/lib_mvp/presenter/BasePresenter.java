@@ -4,8 +4,9 @@ import com.yao.lib_mvp.model.data.DataRepository;
 import com.yao.lib_mvp.view.IView;
 
 import io.reactivex.Observable;
-import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.CompositeDisposable;
+import io.reactivex.observers.DisposableObserver;
 import io.reactivex.schedulers.Schedulers;
 
 /**
@@ -19,6 +20,7 @@ public abstract class BasePresenter<T extends IView> implements IPresenter<T> {
 
     protected T mMvpView;//所有view
     protected DataRepository mDataCenter;//数据中心
+    protected CompositeDisposable mCompositeDisposable;//订阅管理
 
     /**
      * @return 获取V
@@ -33,7 +35,7 @@ public abstract class BasePresenter<T extends IView> implements IPresenter<T> {
     @Override
     public void attachView(T view) {
         mMvpView = view;
-//        mSubscriptions = new SubscriptionList();
+        mCompositeDisposable = new CompositeDisposable();
         this.mDataCenter = new DataRepository();
     }
 
@@ -49,19 +51,26 @@ public abstract class BasePresenter<T extends IView> implements IPresenter<T> {
 
     @Override
     public void unSubscribe() {
-
+        if (mCompositeDisposable != null) {
+            mCompositeDisposable.clear();
+        }
     }
 
     /**
      * 统一添加订阅关联被观察者和观察者
      */
-    public <N> void addSubscription(Observable<N> observable, Observer<N> subscriber) {
+    public <N> void addSubscription(Observable<N> observable, DisposableObserver<N> subscriber) {
         if (observable == null || subscriber == null)
             throw new RuntimeException("Observable or Observer should not be null");
 
-        observable.subscribeOn(Schedulers.io())
+        if (mCompositeDisposable == null) {
+            mCompositeDisposable = new CompositeDisposable();
+        }
+        mCompositeDisposable.add(observable
+                .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(subscriber);
+                .subscribeWith(subscriber));
+
     }
 
     /**
