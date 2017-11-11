@@ -1,18 +1,23 @@
 package com.yao.rxjavaandretrofit;
 
+import android.content.ComponentName;
+import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.google.gson.Gson;
 import com.yao.lib_common.model.entity.UserModel;
-import com.yao.lib_common.observer.ApiCallBack;
 import com.yao.lib_common.network.INewService;
 import com.yao.lib_common.network.RxService;
+import com.yao.lib_common.observer.ApiCallBack;
 import com.yao.lib_mvp.R2;
 import com.yao.lib_mvp.base.BaseActivity;
 import com.yao.moduleb.model.entity.GoodsEntity;
@@ -29,6 +34,13 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        if (!isEnabled()) {
+            Intent intent = new Intent("android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS");
+            startActivity(intent);
+        } else {
+            Toast.makeText(this, "已开启服务权限", Toast.LENGTH_SHORT).show();
+        }
 
         Gson gson = new Gson();
         String jsonNumber = gson.toJson(100);       // 100
@@ -116,5 +128,22 @@ public class MainActivity extends BaseActivity {
                 }
                 break;
         }
+    }
+
+    private boolean isEnabled() {
+        String pkgName = getPackageName();
+        String flat = Settings.Secure.getString(getContentResolver(), "enabled_notification_listeners");
+        if (!TextUtils.isEmpty(flat)) {
+            final String[] names = flat.split(":");
+            for (int i = 0; i < names.length; i++) {
+                ComponentName cn = ComponentName.unflattenFromString(names[i]);
+                if (cn != null) {
+                    if (TextUtils.equals(pkgName, cn.getPackageName())) {
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
     }
 }

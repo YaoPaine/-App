@@ -5,4 +5,5 @@
     <string name="moduleC">ModuleC</string>
     <string name="moduleD">ModuleD</string>
     <string name="resource">Resource</string>
+    <string name="service_name">NotificationService</string>
 </resources>
