@@ -2,9 +2,9 @@ package com.yao.rxjavaandretrofit;
 
 import android.text.TextUtils;
 
-import com.yao.lib_common.gson.GsonUtils;
-import com.yao.lib_common.model.entity.BaseResult;
-import com.yao.lib_common.transformer.ResolveDataTransformer;
+import com.yao.lib_common.retrofit.gson.GsonUtils;
+import com.yao.lib_common.retrofit.model.entity.BaseResult;
+import com.yao.lib_common.retrofit.transformer.ResolveDataTransformer;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableSource;

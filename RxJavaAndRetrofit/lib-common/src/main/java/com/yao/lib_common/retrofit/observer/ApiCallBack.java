@@ -1,8 +1,10 @@
-package com.yao.lib_common.observer;
+package com.yao.lib_common.retrofit.observer;
 
 import android.util.Log;
 
-import com.yao.lib_common.exception.ApiException;
+import com.yao.lib_common.dagger.Container;
+import com.yao.lib_common.dagger.Tank;
+import com.yao.lib_common.retrofit.exception.ApiException;
 
 import io.reactivex.observers.DisposableObserver;
 
@@ -38,7 +40,8 @@ public abstract class ApiCallBack<T> extends DisposableObserver<T> {
         } else {
             onSuccessNotNull(data);
         }
-
+        new Container().init();
+        new Tank().init();
     }
 
     @Override

@@ -1,4 +1,4 @@
-package com.yao.lib_common.model.entity.news;
+package com.yao.lib_common.retrofit.model.entity.news;
 
 import java.util.List;
 

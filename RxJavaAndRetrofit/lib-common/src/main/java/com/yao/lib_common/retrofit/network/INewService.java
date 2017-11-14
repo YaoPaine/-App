@@ -1,7 +1,7 @@
-package com.yao.lib_common.network;
+package com.yao.lib_common.retrofit.network;
 
-import com.yao.lib_common.model.entity.BaseResult;
-import com.yao.lib_common.model.entity.news.NewsRequestModel;
+import com.yao.lib_common.retrofit.model.entity.BaseResult;
+import com.yao.lib_common.retrofit.model.entity.news.NewsRequestModel;
 
 import java.util.Map;
 

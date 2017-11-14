@@ -1,4 +1,4 @@
-package com.yao.lib_common.model.entity;
+package com.yao.lib_common.retrofit.model.entity;
 
 import java.io.Serializable;
 

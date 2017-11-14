@@ -1,11 +1,11 @@
-package com.yao.lib_common.network;
+package com.yao.lib_common.retrofit.network;
 
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonDeserializer;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
-import com.yao.lib_common.model.entity.BaseResult;
+import com.yao.lib_common.retrofit.model.entity.BaseResult;
 
 import java.lang.reflect.Type;
 

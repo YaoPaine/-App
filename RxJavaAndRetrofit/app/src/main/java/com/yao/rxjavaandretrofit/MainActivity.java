@@ -14,10 +14,10 @@ import android.widget.Toast;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.google.gson.Gson;
-import com.yao.lib_common.model.entity.UserModel;
-import com.yao.lib_common.network.INewService;
-import com.yao.lib_common.network.RxService;
-import com.yao.lib_common.observer.ApiCallBack;
+import com.yao.lib_common.retrofit.model.entity.UserModel;
+import com.yao.lib_common.retrofit.network.INewService;
+import com.yao.lib_common.retrofit.network.RxService;
+import com.yao.lib_common.retrofit.observer.ApiCallBack;
 import com.yao.lib_mvp.R2;
 import com.yao.lib_mvp.base.BaseActivity;
 import com.yao.moduleb.model.entity.GoodsEntity;

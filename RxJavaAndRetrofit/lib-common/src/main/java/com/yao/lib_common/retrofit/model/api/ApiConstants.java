@@ -1,4 +1,4 @@
-package com.yao.lib_common.model.api;
+package com.yao.lib_common.retrofit.model.api;
 
 /**
  * @Description:

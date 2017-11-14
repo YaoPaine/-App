@@ -1,7 +1,7 @@
 package com.yao.moduled.news.model;
 
-import com.yao.lib_common.model.entity.news.NewsRequestModel;
-import com.yao.lib_common.network.INewService;
+import com.yao.lib_common.retrofit.model.entity.news.NewsRequestModel;
+import com.yao.lib_common.retrofit.network.INewService;
 
 import java.util.HashMap;
 import java.util.Map;
