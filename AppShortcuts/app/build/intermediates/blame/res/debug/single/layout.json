@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/heyao/AndroidProjects/AppShortcuts/app/build/intermediates/res/merged/debug/layout/list_item.xml",
+        "source": "/Users/heyao/AndroidProjects/AppShortcuts/app/src/main/res/layout/list_item.xml"
+    },
+    {
+        "merged": "/Users/heyao/AndroidProjects/AppShortcuts/app/build/intermediates/res/merged/debug/layout/main.xml",
+        "source": "/Users/heyao/AndroidProjects/AppShortcuts/app/src/main/res/layout/main.xml"
+    }
+]

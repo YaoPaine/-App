@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ExpandableTextView">
+
+        <!--允许显示的最大行-->
+        <attr name="maxExpandLines" format="integer"/>
+        <!--动画执行的时间-->
+        <attr name="duration" format="integer"/>
+    </declare-styleable>
+
+</resources>

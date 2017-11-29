@@ -1,0 +1,140 @@
+[
+    {
+        "outputFile": "/Users/heyao/AndroidProjects/AppShortcuts/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ja/values-ja.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 52,
+                    "endOffset": 103
+                },
+                "from": {
+                    "file": "/Users/heyao/AndroidProjects/AppShortcuts/app/src/main/res/values-ja/strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 792,
+                        "endColumn": 52,
+                        "endOffset": 840
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 108,
+                    "endColumn": 52,
+                    "endOffset": 156
+                },
+                "from": {
+                    "file": "/Users/heyao/AndroidProjects/AppShortcuts/app/src/main/res/values-ja/strings.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 845,
+                        "endColumn": 52,
+                        "endOffset": 893
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 161,
+                    "endColumn": 52,
+                    "endOffset": 209
+                },
+                "from": {
+                    "file": "/Users/heyao/AndroidProjects/AppShortcuts/app/src/main/res/values-ja/strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 739,
+                        "endColumn": 52,
+                        "endOffset": 787
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 214,
+                    "endColumn": 47,
+                    "endOffset": 257
+                },
+                "from": {
+                    "file": "/Users/heyao/AndroidProjects/AppShortcuts/app/src/main/res/values-ja/strings.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1004,
+                        "endColumn": 47,
+                        "endOffset": 1047
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 262,
+                    "endColumn": 46,
+                    "endOffset": 304
+                },
+                "from": {
+                    "file": "/Users/heyao/AndroidProjects/AppShortcuts/app/src/main/res/values-ja/strings.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1052,
+                        "endColumn": 46,
+                        "endOffset": 1094
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 309,
+                    "endColumn": 58,
+                    "endOffset": 363
+                },
+                "from": {
+                    "file": "/Users/heyao/AndroidProjects/AppShortcuts/app/src/main/res/values-ja/strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 898,
+                        "endColumn": 58,
+                        "endOffset": 952
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 368,
+                    "endColumn": 46,
+                    "endOffset": 410
+                },
+                "from": {
+                    "file": "/Users/heyao/AndroidProjects/AppShortcuts/app/src/main/res/values-ja/strings.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 957,
+                        "endColumn": 46,
+                        "endOffset": 999
+                    }
+                }
+            }
+        ]
+    }
+]

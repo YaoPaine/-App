@@ -2,6 +2,7 @@ package com.yao.lib_common.retrofit.network;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.yao.lib_common.retrofit.gson.ResultJsonDeserializer;
 import com.yao.lib_common.retrofit.model.api.ApiConstants;
 import com.yao.lib_common.retrofit.model.entity.BaseResult;
 

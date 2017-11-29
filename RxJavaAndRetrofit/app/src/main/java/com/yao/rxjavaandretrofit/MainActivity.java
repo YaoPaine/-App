@@ -15,7 +15,7 @@ import android.widget.Toast;
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.google.gson.Gson;
 import com.yao.lib_common.retrofit.model.entity.UserModel;
-import com.yao.lib_common.retrofit.network.INewService;
+import com.yao.lib_common.retrofit.network.ApiService;
 import com.yao.lib_common.retrofit.network.RxService;
 import com.yao.lib_common.retrofit.observer.ApiCallBack;
 import com.yao.lib_mvp.R2;
@@ -83,7 +83,7 @@ public class MainActivity extends BaseActivity {
         hashMap.put("osVersionCode", 24);
         hashMap.put("chn", "google");
         hashMap.put("uuid", "a2adc10d-94a3-41b0-bd6b-bc4da76bad58");
-        RxService.createRetrofit().create(INewService.class)
+        RxService.createRetrofit().create(ApiService.class)
                 .postWithMapParam("goods/detailNew", hashMap)
                 .compose(new Transformer<>(GoodsEntity.class))
                 .subscribe(new ApiCallBack<GoodsEntity>() {

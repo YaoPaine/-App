@@ -15,7 +15,7 @@ import com.alibaba.android.arouter.facade.annotation.Route;
 import com.google.android.flexbox.FlexboxLayout;
 import com.google.gson.Gson;
 import com.yao.lib_common.retrofit.model.entity.BaseResult;
-import com.yao.lib_common.retrofit.network.INewService;
+import com.yao.lib_common.retrofit.network.ApiService;
 import com.yao.lib_common.retrofit.network.RxService;
 import com.yao.lib_mvp.base.BaseActivity;
 import com.yao.moduleb.model.entity.AttrValuesEntity;
@@ -95,7 +95,7 @@ public class ModuleBActivity extends BaseActivity {
         hashMap.put("chn", "google");
         hashMap.put("uuid", "a2adc10d-94a3-41b0-bd6b-bc4da76bad58");
         RxService.createRetrofit()
-                .create(INewService.class).postWithMapParam("goods/detailNew", hashMap)
+                .create(ApiService.class).postWithMapParam("goods/detailNew", hashMap)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Observer<BaseResult<String>>() {

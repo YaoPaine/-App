@@ -1,7 +1,7 @@
 package com.yao.moduled.news.model;
 
 import com.yao.lib_common.retrofit.model.entity.news.NewsRequestModel;
-import com.yao.lib_common.retrofit.network.INewService;
+import com.yao.lib_common.retrofit.network.ApiService;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -17,7 +17,7 @@ import io.reactivex.Observable;
 
 public class NewsModel extends Model {
 
-    private INewService service;
+    private ApiService service;
 
     @Override
     public Observable<NewsRequestModel> loadNews(String url, int type) {
