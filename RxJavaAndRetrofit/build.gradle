@@ -48,4 +48,7 @@ ext {
     //butterknife
     butterKnife = "com.jakewharton:butterknife:$butterKnifeVersion"
     butterKnifeCompiler = "com.jakewharton:butterknife-compiler:$butterKnifeVersion"
+
+    //dagger2
+    daggerCompiler="com.google.dagger:dagger-compiler:2.11"
 }

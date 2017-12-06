@@ -11,8 +11,13 @@ import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.yao.lib_common.rxjava.practise.operator.Operators;
+import com.yao.lib_mvp.R2;
 import com.yao.lib_mvp.base.BaseActivity;
+import com.yao.modulea.component.DaggerOperatorComponent;
 import com.yao.resource.constants.RouterConstants;
+
+import javax.inject.Inject;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -23,11 +28,17 @@ public class ModuleAActivity extends BaseActivity {
     @BindView(R2.id.tv)
     TextView tv;
 
+    @Inject
+    public Operators operators;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_module_a);
+
+        DaggerOperatorComponent.create().inject(this);
+        operators.create();
+
         Intent intent = getIntent();
         String name = intent.getStringExtra("module");
         if (!TextUtils.isEmpty(name))
