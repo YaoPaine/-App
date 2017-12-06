@@ -1,4 +1,4 @@
-package com.yao.lib_common.retrofit.model.api;
+package com.yao.lib_common.rxjava.retrofit.model.api;
 
 /**
  * @Description:

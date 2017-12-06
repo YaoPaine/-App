@@ -1,4 +1,4 @@
-package com.yao.lib_common.retrofit.model.entity;
+package com.yao.lib_common.rxjava.retrofit.model.entity;
 
 /**
  * @Description:

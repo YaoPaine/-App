@@ -1,6 +1,6 @@
 package com.yao.moduled.news.model;
 
-import com.yao.lib_common.retrofit.model.entity.news.NewsRequestModel;
+import com.yao.lib_common.rxjava.retrofit.model.entity.news.NewsRequestModel;
 import com.yao.lib_mvp.model.BaseModel;
 
 import io.reactivex.Observable;

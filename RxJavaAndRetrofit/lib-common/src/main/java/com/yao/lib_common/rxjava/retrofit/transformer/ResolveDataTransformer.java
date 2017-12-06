@@ -1,7 +1,7 @@
-package com.yao.lib_common.retrofit.transformer;
+package com.yao.lib_common.rxjava.retrofit.transformer;
 
-import com.yao.lib_common.retrofit.exception.ApiException;
-import com.yao.lib_common.retrofit.model.entity.BaseResult;
+import com.yao.lib_common.rxjava.retrofit.exception.ApiException;
+import com.yao.lib_common.rxjava.retrofit.model.entity.BaseResult;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableSource;

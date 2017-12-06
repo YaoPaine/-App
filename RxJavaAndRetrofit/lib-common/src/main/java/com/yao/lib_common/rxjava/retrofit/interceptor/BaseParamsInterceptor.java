@@ -1,14 +1,21 @@
-package com.yao.lib_common.retrofit.interceptor;
+package com.yao.lib_common.rxjava.retrofit.interceptor;
 
 import android.support.annotation.NonNull;
 import android.text.TextUtils;
-import okhttp3.*;
-import okio.Buffer;
+
 import org.json.JSONObject;
 
 import java.io.IOException;
 import java.util.Map;
 import java.util.Set;
+
+import okhttp3.HttpUrl;
+import okhttp3.Interceptor;
+import okhttp3.MediaType;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
+import okio.Buffer;
 
 /**
  * @Description: retrofit的公共参数

@@ -1,7 +1,7 @@
 package com.yao.moduled.news.view;
 
 
-import com.yao.lib_common.retrofit.model.entity.news.NewsBean;
+import com.yao.lib_common.rxjava.retrofit.model.entity.news.NewsBean;
 import com.yao.lib_mvp.view.IView;
 
 import java.util.List;

@@ -1,6 +1,6 @@
 package com.yao.lib_mvp.model;
 
-import com.yao.lib_common.retrofit.network.RxService;
+import com.yao.lib_common.rxjava.retrofit.network.RxService;
 
 /**
  * @Description:

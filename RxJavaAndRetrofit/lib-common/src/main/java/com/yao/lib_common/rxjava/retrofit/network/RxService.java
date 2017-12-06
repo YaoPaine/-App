@@ -1,10 +1,10 @@
-package com.yao.lib_common.retrofit.network;
+package com.yao.lib_common.rxjava.retrofit.network;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.yao.lib_common.retrofit.gson.ResultJsonDeserializer;
-import com.yao.lib_common.retrofit.model.api.ApiConstants;
-import com.yao.lib_common.retrofit.model.entity.BaseResult;
+import com.yao.lib_common.rxjava.retrofit.gson.ResultJsonDeserializer;
+import com.yao.lib_common.rxjava.retrofit.model.api.ApiConstants;
+import com.yao.lib_common.rxjava.retrofit.model.entity.BaseResult;
 
 import java.util.concurrent.TimeUnit;
 
@@ -12,7 +12,6 @@ import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
  * @Description:
@@ -47,7 +46,7 @@ public class RxService {
 
                     mRetrofit = new Retrofit.Builder()
                             .client(okHttpClient)
-                            .addConverterFactory(GsonConverterFactory.create(gson))
+//                            .addConverterFactory(GsonConverterFactory.create(gson))
                             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                             .baseUrl(ApiConstants.BASE_URL)
                             .build();

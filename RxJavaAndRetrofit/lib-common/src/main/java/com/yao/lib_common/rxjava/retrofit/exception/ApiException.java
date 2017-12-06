@@ -1,4 +1,4 @@
-package com.yao.lib_common.retrofit.exception;
+package com.yao.lib_common.rxjava.retrofit.exception;
 
 /**
  * @Description:

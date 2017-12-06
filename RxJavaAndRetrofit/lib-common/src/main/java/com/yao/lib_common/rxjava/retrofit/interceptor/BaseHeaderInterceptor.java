@@ -1,4 +1,4 @@
-package com.yao.lib_common.retrofit.interceptor;
+package com.yao.lib_common.rxjava.retrofit.interceptor;
 
 import android.support.annotation.NonNull;
 

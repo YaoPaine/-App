@@ -4,7 +4,7 @@ package com.yao.moduled.news;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-import com.yao.lib_common.retrofit.model.entity.news.NewsBean;
+import com.yao.lib_common.rxjava.retrofit.model.entity.news.NewsBean;
 import com.yao.lib_mvp.base.BaseActivity;
 import com.yao.moduled.R;
 import com.yao.moduled.news.view.NewsView;

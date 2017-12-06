@@ -1,10 +1,10 @@
-package com.yao.lib_common.retrofit.observer;
+package com.yao.lib_common.rxjava.retrofit.observer;
 
 import android.util.Log;
 
 import com.yao.lib_common.dagger.Container;
 import com.yao.lib_common.dagger.Tank;
-import com.yao.lib_common.retrofit.exception.ApiException;
+import com.yao.lib_common.rxjava.retrofit.exception.ApiException;
 
 import io.reactivex.observers.DisposableObserver;
 

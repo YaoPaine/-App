@@ -1,4 +1,4 @@
-package com.yao.lib_common.retrofit.gson;
+package com.yao.lib_common.rxjava.retrofit.gson;
 
 import com.google.gson.Gson;
 
