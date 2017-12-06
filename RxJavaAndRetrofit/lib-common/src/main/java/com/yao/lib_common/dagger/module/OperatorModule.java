@@ -1,6 +1,7 @@
 package com.yao.lib_common.dagger.module;
 
 import com.yao.lib_common.rxjava.practise.operator.Operators;
+import com.yao.lib_common.rxjava.practise.subject.Subjects;
 
 import javax.inject.Singleton;
 
@@ -20,5 +21,11 @@ public class OperatorModule {
     @Singleton
     public Operators provideOperators() {
         return new Operators();
+    }
+
+    @Provides
+    @Singleton
+    public Subjects providesSubjects() {
+        return new Subjects();
     }
 }

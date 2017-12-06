@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.yao.lib_common.rxjava.practise.operator.Operators;
+import com.yao.lib_common.rxjava.practise.subject.Subjects;
 import com.yao.lib_mvp.R2;
 import com.yao.lib_mvp.base.BaseActivity;
 import com.yao.modulea.component.DaggerOperatorComponent;
@@ -31,13 +32,17 @@ public class ModuleAActivity extends BaseActivity {
     @Inject
     public Operators operators;
 
+    @Inject
+    public Subjects subjects;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_module_a);
 
         DaggerOperatorComponent.create().inject(this);
-        operators.create();
+//        operators.error();
+        subjects.doObserverSubject();
 
         Intent intent = getIntent();
         String name = intent.getStringExtra("module");
