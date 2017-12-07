@@ -1,5 +1,7 @@
 package com.yao.lib_mvp.mvp2.view;
 
+import com.yao.lib_mvp.mvp2.model.entity.GoodsEntity;
+
 /**
  * @Description:
  * @Author: YaoPaine
@@ -7,12 +9,12 @@ package com.yao.lib_mvp.mvp2.view;
  * @Version:
  */
 
-public interface SimpleView extends IView {
+public interface SimpleView extends IMvpBaseView {
     //请求时展示加载
     void requestLoading();
 
     //请求成功 WeatherBean
-    void resultSuccess(Object result);
+    void resultSuccess(GoodsEntity result);
 
     //请求失败
     void resultFailure(String result);

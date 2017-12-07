@@ -7,5 +7,6 @@ package com.yao.lib_mvp.mvp2.view;
  * @Version:
  */
 
-public interface IView {
+public interface IMvpBaseView<T> {
+
 }

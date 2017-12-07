@@ -7,5 +7,5 @@ package com.yao.lib_mvp.mvp2.model;
  * @Version:
  */
 
-public interface IModel {
+public interface IMvpBaseModel {
 }

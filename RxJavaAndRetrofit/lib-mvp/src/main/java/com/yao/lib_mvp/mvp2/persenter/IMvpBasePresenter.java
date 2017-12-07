@@ -1,5 +1,7 @@
 package com.yao.lib_mvp.mvp2.persenter;
 
+import com.yao.lib_mvp.mvp2.view.IMvpBaseView;
+
 /**
  * @Description:
  * @Author: YaoPaine
@@ -7,5 +9,5 @@ package com.yao.lib_mvp.mvp2.persenter;
  * @Version:
  */
 
-public interface IPresenter {
+public interface IMvpBasePresenter<V extends IMvpBaseView> {
 }

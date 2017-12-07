@@ -7,6 +7,8 @@ import com.yao.lib_mvp.mvp2.model.entity.GoodsEntity;
 
 import java.util.HashMap;
 
+import javax.inject.Inject;
+
 import io.reactivex.Observable;
 
 /**
@@ -16,7 +18,12 @@ import io.reactivex.Observable;
  * @Version:
  */
 
-public class SimpleModel implements IModel {
+public class SimpleModel implements IMvpBaseModel {
+
+    @Inject
+    public SimpleModel() {
+
+    }
 
     public Observable<GoodsEntity> requestData() {
         HashMap<String, Object> hashMap = new HashMap<>();
@@ -36,5 +43,9 @@ public class SimpleModel implements IModel {
                 .create(ApiService.class)
                 .postWithMapParam("goods/detailNew", hashMap)
                 .compose(new Transformer<>(GoodsEntity.class));
+    }
+
+    public void interruptHttp() {
+
     }
 }

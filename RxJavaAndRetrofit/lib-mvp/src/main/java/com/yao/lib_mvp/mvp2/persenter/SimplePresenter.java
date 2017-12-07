@@ -5,6 +5,8 @@ import com.yao.lib_mvp.mvp2.model.SimpleModel;
 import com.yao.lib_mvp.mvp2.model.entity.GoodsEntity;
 import com.yao.lib_mvp.mvp2.view.SimpleView;
 
+import javax.inject.Inject;
+
 /**
  * @Description:
  * @Author: YaoPaine
@@ -12,29 +14,65 @@ import com.yao.lib_mvp.mvp2.view.SimpleView;
  * @Version:
  */
 
-public class SimplePresenter implements IPresenter {
+public class SimplePresenter implements IMvpBasePresenter {
 
     private SimpleView mSimpleView;
-    private SimpleModel mSimpleModel;
 
-    public SimplePresenter(SimpleView simpleView) {
-        this.mSimpleView = simpleView;
-        this.mSimpleModel = new SimpleModel();
+    @Inject
+    SimpleModel mSimpleModel;
+
+    @Inject
+    public SimplePresenter() {
+//        attach(simpleView);
+//        this.mSimpleModel = new SimpleModel();
+    }
+
+    @Inject
+    public SimplePresenter(SimpleModel simpleModel) {
+        this.mSimpleModel = simpleModel;
     }
 
     public void clickRequest() {
+        if (mSimpleView == null) return;
+        mSimpleView.requestLoading();
         mSimpleModel.requestData().subscribe(new SimpleObserve<GoodsEntity>() {
 
             @Override
             public void onNext(GoodsEntity goodsEntity) {
-                mSimpleView.resultSuccess(goodsEntity);
+                if (mSimpleView != null)
+                    mSimpleView.resultSuccess(goodsEntity);
             }
 
             @Override
             public void onError(Throwable e) {
                 super.onError(e);
-                mSimpleView.resultFailure(e.toString());
+                if (mSimpleView != null)
+                    mSimpleView.resultFailure(e.toString());
             }
         });
+    }
+
+    /**
+     * 绑定
+     *
+     * @param view
+     */
+    public void attach(SimpleView view) {
+        this.mSimpleView = view;
+    }
+
+    /**
+     * 解除绑定
+     */
+    public void detach() {
+        this.mSimpleView = null;
+        interruptHttp();
+    }
+
+    /**
+     * 取消网络请求
+     */
+    private void interruptHttp() {
+        mSimpleModel.interruptHttp();
     }
 }

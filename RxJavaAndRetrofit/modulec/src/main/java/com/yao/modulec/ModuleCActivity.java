@@ -7,9 +7,14 @@ import android.widget.TextView;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.yao.lib_mvp.R2;
 import com.yao.lib_mvp.base.BaseActivity;
+import com.yao.lib_mvp.mvp2.model.entity.GoodsEntity;
 import com.yao.lib_mvp.mvp2.persenter.SimplePresenter;
 import com.yao.lib_mvp.mvp2.view.SimpleView;
+import com.yao.modulec.component.DaggerSimpleComponent;
 import com.yao.resource.constants.RouterConstants;
+
+import javax.inject.Inject;
+import javax.inject.Named;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -20,13 +25,22 @@ public class ModuleCActivity extends BaseActivity implements SimpleView {
     @BindView(R2.id.tv_module_c)
     TextView tv;
 
-    private SimplePresenter mSimplePresenter;
+    @Named("initModel")
+    @Inject
+    SimplePresenter mSimplePresenter;
+
+    @Named("initItself")
+    @Inject
+    SimplePresenter presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.module_c_activity_main);
-        mSimplePresenter = new SimplePresenter(this);
+        DaggerSimpleComponent.create().injectActivity(this);
+        mSimplePresenter.attach(this);
+
+//        mSimplePresenter = new SimplePresenter();
     }
 
     @OnClick({R2.id.tv_module_c})
@@ -49,12 +63,18 @@ public class ModuleCActivity extends BaseActivity implements SimpleView {
     }
 
     @Override
-    public void resultSuccess(Object result) {
+    public void resultSuccess(GoodsEntity result) {
         tv.setText(result.toString());
     }
 
     @Override
     public void resultFailure(String result) {
         tv.setText(result);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mSimplePresenter.detach();
     }
 }
