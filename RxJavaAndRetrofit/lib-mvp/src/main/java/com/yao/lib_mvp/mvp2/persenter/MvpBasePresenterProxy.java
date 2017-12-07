@@ -18,6 +18,7 @@ public class MvpBasePresenterProxy<V extends IMvpBaseView<P>, P extends MvpBaseP
     private static final String PRESENTER_KEY = "presenter_key";
 
     private P mPresenter;
+    private boolean mIsAttachView;
     private Bundle mBundle;
     private PresenterMvpFactory<V, P> mFactory;
 
@@ -49,5 +50,61 @@ public class MvpBasePresenterProxy<V extends IMvpBaseView<P>, P extends MvpBaseP
         return mPresenter;
     }
 
+    /**
+     * 绑定Presenter和view
+     */
+    public void onResume(V mvpView) {
+        getMvpPresenter();
+        if (mPresenter != null && !mIsAttachView) {
+            mPresenter.attachView(mvpView);
+            mIsAttachView = true;
+        }
+    }
+
+    /**
+     * 销毁Presenter持有的View
+     */
+    private void onDetachMvpView() {
+        if (mPresenter != null && mIsAttachView) {
+            mPresenter.onDetachMvpView();
+            mIsAttachView = false;
+        }
+    }
+
+    /**
+     * 销毁Presenter
+     */
+    public void onDestroy() {
+        if (mPresenter != null) {
+            onDetachMvpView();
+            mPresenter.onDestroyPresenter();
+            mPresenter = null;
+        }
+    }
+
+    /**
+     * 意外销毁时保存数据
+     *
+     * @return
+     */
+    public Bundle onSaveInstanceState() {
+        Bundle bundle = new Bundle();
+        getMvpPresenter();
+        if (mPresenter != null) {
+            Bundle presenterBundle = new Bundle();
+            mPresenter.onSaveInstanceState(presenterBundle);
+            bundle.putBundle(PRESENTER_KEY, presenterBundle);
+        }
+        return bundle;
+    }
+
+    /**
+     * 意外销毁后恢复
+     *
+     * @param savedInstanceState
+     */
+    public void onRestoreInstanceState(Bundle savedInstanceState) {
+        mBundle = savedInstanceState;
+    }
 
 }
