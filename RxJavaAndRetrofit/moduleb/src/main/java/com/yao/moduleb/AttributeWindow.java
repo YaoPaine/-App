@@ -15,9 +15,9 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 
-import com.yao.moduleb.model.entity.AttrsEntity;
-import com.yao.moduleb.model.entity.GoodsEntity;
-import com.yao.moduleb.model.entity.SkuEntity;
+import com.yao.lib_mvp.mvp2.model.entity.AttrsEntity;
+import com.yao.lib_mvp.mvp2.model.entity.GoodsEntity;
+import com.yao.lib_mvp.mvp2.model.entity.SkuEntity;
 import com.yao.moduleb.presenter.AttrAdapter;
 
 import java.util.List;

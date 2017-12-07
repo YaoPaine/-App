@@ -1,4 +1,4 @@
-package com.yao.moduleb.model.entity;
+package com.yao.lib_mvp.mvp2.model.entity;
 
 /**
  * @Description:

@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
+import com.yao.lib_mvp.R;
+import com.yao.resource.utils.Utils;
+
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
@@ -45,6 +48,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     public void setContentView(int layoutResID) {
         super.setContentView(layoutResID);
         unbinder = ButterKnife.bind(this);
+        Utils.initStatusBar(this, R.color.colorPrimaryDark);
     }
 
     @Override

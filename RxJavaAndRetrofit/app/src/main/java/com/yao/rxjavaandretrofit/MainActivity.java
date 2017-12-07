@@ -18,9 +18,10 @@ import com.yao.lib_common.rxjava.retrofit.model.entity.UserModel;
 import com.yao.lib_common.rxjava.retrofit.network.ApiService;
 import com.yao.lib_common.rxjava.retrofit.network.RxService;
 import com.yao.lib_common.rxjava.retrofit.observer.ApiCallBack;
+import com.yao.lib_common.rxjava.retrofit.transformer.Transformer;
 import com.yao.lib_mvp.R2;
 import com.yao.lib_mvp.base.BaseActivity;
-import com.yao.moduleb.model.entity.GoodsEntity;
+import com.yao.lib_mvp.mvp2.model.entity.GoodsEntity;
 import com.yao.resource.constants.RouterConstants;
 
 import java.util.HashMap;
@@ -116,7 +117,7 @@ public class MainActivity extends BaseActivity {
                 startActivity(intent);*/
                 Bundle bundle = new Bundle();
                 bundle.putSerializable("user", new UserModel("heyao", "!@#qwe123"));
-                ARouter.getInstance().build(RouterConstants.MODULE_A_ACTIVITY).with(bundle).navigation();
+                ARouter.getInstance().build(RouterConstants.MODULE_C_ACTIVITY).with(bundle).navigation();
                 break;
             case R.id.button3:
                 Fragment fragment = (Fragment) ARouter.getInstance().build(RouterConstants.MODULE_B_FRAGMENT).navigation();

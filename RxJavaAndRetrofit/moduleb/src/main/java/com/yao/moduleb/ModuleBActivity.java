@@ -18,11 +18,11 @@ import com.yao.lib_common.rxjava.retrofit.model.entity.BaseResult;
 import com.yao.lib_common.rxjava.retrofit.network.ApiService;
 import com.yao.lib_common.rxjava.retrofit.network.RxService;
 import com.yao.lib_mvp.base.BaseActivity;
-import com.yao.moduleb.model.entity.AttrValuesEntity;
-import com.yao.moduleb.model.entity.AttrsEntity;
-import com.yao.moduleb.model.entity.GoodsEntity;
-import com.yao.moduleb.model.entity.SkuAttrEntity;
-import com.yao.moduleb.model.entity.SkuEntity;
+import com.yao.lib_mvp.mvp2.model.entity.AttrValuesEntity;
+import com.yao.lib_mvp.mvp2.model.entity.AttrsEntity;
+import com.yao.lib_mvp.mvp2.model.entity.GoodsEntity;
+import com.yao.lib_mvp.mvp2.model.entity.SkuAttrEntity;
+import com.yao.lib_mvp.mvp2.model.entity.SkuEntity;
 import com.yao.moduleb.view.TagTextView;
 import com.yao.resource.constants.RouterConstants;
 

@@ -12,10 +12,10 @@ import android.widget.TextView;
 import com.google.android.flexbox.FlexboxLayout;
 import com.yao.moduleb.R;
 import com.yao.moduleb.R2;
-import com.yao.moduleb.model.entity.AttrValuesEntity;
-import com.yao.moduleb.model.entity.AttrsEntity;
-import com.yao.moduleb.model.entity.SkuAttrEntity;
-import com.yao.moduleb.model.entity.SkuEntity;
+import com.yao.lib_mvp.mvp2.model.entity.AttrValuesEntity;
+import com.yao.lib_mvp.mvp2.model.entity.AttrsEntity;
+import com.yao.lib_mvp.mvp2.model.entity.SkuAttrEntity;
+import com.yao.lib_mvp.mvp2.model.entity.SkuEntity;
 import com.yao.moduleb.view.TagTextView;
 
 import java.util.ArrayList;
