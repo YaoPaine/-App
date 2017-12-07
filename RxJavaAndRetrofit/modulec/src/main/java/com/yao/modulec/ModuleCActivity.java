@@ -38,7 +38,7 @@ public class ModuleCActivity extends BaseActivity implements SimpleView {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.module_c_activity_main);
         DaggerSimpleComponent.create().injectActivity(this);
-        mSimplePresenter.attach(this);
+        mSimplePresenter.attachView(this);
 
 //        mSimplePresenter = new SimplePresenter();
     }
@@ -75,6 +75,6 @@ public class ModuleCActivity extends BaseActivity implements SimpleView {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        mSimplePresenter.detach();
+        mSimplePresenter.detachView();
     }
 }

@@ -14,9 +14,9 @@ import javax.inject.Inject;
  * @Version:
  */
 
-public class SimplePresenter implements IMvpBasePresenter {
+public class SimplePresenter extends MvpBasePresenter<SimpleView> {
 
-    private SimpleView mSimpleView;
+//    private SimpleView mSimpleView;
 
     @Inject
     SimpleModel mSimpleModel;
@@ -33,41 +33,41 @@ public class SimplePresenter implements IMvpBasePresenter {
     }
 
     public void clickRequest() {
-        if (mSimpleView == null) return;
-        mSimpleView.requestLoading();
+        if (IView == null) return;
+        IView.requestLoading();
         mSimpleModel.requestData().subscribe(new SimpleObserve<GoodsEntity>() {
 
             @Override
             public void onNext(GoodsEntity goodsEntity) {
-                if (mSimpleView != null)
-                    mSimpleView.resultSuccess(goodsEntity);
+                if (IView != null)
+                    IView.resultSuccess(goodsEntity);
             }
 
             @Override
             public void onError(Throwable e) {
                 super.onError(e);
-                if (mSimpleView != null)
-                    mSimpleView.resultFailure(e.toString());
+                if (IView != null)
+                    IView.resultFailure(e.toString());
             }
         });
     }
 
-    /**
-     * 绑定
-     *
-     * @param view
-     */
-    public void attach(SimpleView view) {
-        this.mSimpleView = view;
-    }
-
-    /**
-     * 解除绑定
-     */
-    public void detach() {
-        this.mSimpleView = null;
-        interruptHttp();
-    }
+//    /**
+//     * 绑定
+//     *
+//     * @param view
+//     */
+//    public void attach(SimpleView view) {
+//        this.mSimpleView = view;
+//    }
+//
+//    /**
+//     * 解除绑定
+//     */
+//    public void detach() {
+//        this.mSimpleView = null;
+//        interruptHttp();
+//    }
 
     /**
      * 取消网络请求

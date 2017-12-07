@@ -117,7 +117,7 @@ public class MainActivity extends BaseActivity {
                 startActivity(intent);*/
                 Bundle bundle = new Bundle();
                 bundle.putSerializable("user", new UserModel("heyao", "!@#qwe123"));
-                ARouter.getInstance().build(RouterConstants.MODULE_C_ACTIVITY).with(bundle).navigation();
+                ARouter.getInstance().build(RouterConstants.MODULE_D_ACTIVITY).with(bundle).navigation();
                 break;
             case R.id.button3:
                 Fragment fragment = (Fragment) ARouter.getInstance().build(RouterConstants.MODULE_B_FRAGMENT).navigation();

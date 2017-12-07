@@ -57,7 +57,7 @@ dependencies {
     compile project(':lib-mvp')
     //ARouter
     annotationProcessor rootProject.ext.arouterCompiler
-
+    annotationProcessor rootProject.ext.daggerCompiler
     annotationProcessor rootProject.ext.butterKnifeCompiler
 
 }
