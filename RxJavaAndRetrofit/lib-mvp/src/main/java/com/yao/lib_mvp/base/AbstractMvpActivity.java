@@ -87,6 +87,14 @@ public abstract class AbstractMvpActivity<V extends IMvpBaseView<P>, P extends M
         }
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        if (mPresenter != null) {
+            mPresenter.onSaveInstanceState(outState);
+        }
+    }
+
     /**
      * 获取Presenter
      *

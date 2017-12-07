@@ -1,5 +1,7 @@
 package com.yao.lib_mvp.mvp2.persenter;
 
+import android.os.Bundle;
+
 import com.yao.lib_mvp.mvp2.view.IMvpBaseView;
 
 /**
@@ -9,12 +11,12 @@ import com.yao.lib_mvp.mvp2.view.IMvpBaseView;
  * @Version:
  */
 
-public interface IMvpBasePresenter<T extends IMvpBaseView> {
+public interface IMvpBasePresenter<V extends IMvpBaseView> {
 
     /**
      * 将presenter 与view绑定
      */
-    void attachView(T view);
+    void attachView(V view);
 
     /**
      * 将presenter与view的关联解除
@@ -22,9 +24,15 @@ public interface IMvpBasePresenter<T extends IMvpBaseView> {
     void detachView();
 
     /**
-     * @return 获取V层
+     * activity 意外销毁时调用
+     *
+     * @param outState
      */
-    T getMvpView();
+    void onSaveInstanceState(Bundle outState);
+
+    void onAttachMvpView(V view);
+
+    void onCreatePresenter(Bundle savedInstanceState);
 
     void onStart();
 
@@ -35,4 +43,13 @@ public interface IMvpBasePresenter<T extends IMvpBaseView> {
     void onPause();
 
     void onStop();
+
+    void onDetachMvpView();
+
+    void onDestroyPresenter();
+
+    /**
+     * @return 获取V层
+     */
+    V getMvpView();
 }

@@ -1,5 +1,7 @@
 package com.yao.lib_mvp.mvp2.persenter;
 
+import android.os.Bundle;
+
 import com.yao.lib_mvp.mvp2.view.IMvpBaseView;
 
 /**
@@ -29,6 +31,21 @@ public abstract class MvpBasePresenter<V extends IMvpBaseView> implements IMvpBa
     }
 
     @Override
+    public void onAttachMvpView(V view) {
+        this.IView = view;
+    }
+
+    @Override
+    public void onCreatePresenter(Bundle savedInstanceState) {
+
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+
+    }
+
+    @Override
     public void onStart() {
 
     }
@@ -50,6 +67,16 @@ public abstract class MvpBasePresenter<V extends IMvpBaseView> implements IMvpBa
 
     @Override
     public void onStop() {
+
+    }
+
+    @Override
+    public void onDetachMvpView() {
+        this.IView = null;
+    }
+
+    @Override
+    public void onDestroyPresenter() {
 
     }
 }
