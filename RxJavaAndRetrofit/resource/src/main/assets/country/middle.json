@@ -1,0 +1,58 @@
+[
+  {
+    "isoCode": "SA",
+    "languageSite": 1,
+    "languageText": "Saudi Arabia",
+    "parentId": 0,
+    "regionId": 1876,
+    "regionName": "Saudi Arabia",
+    "regionType": 0
+  },
+  {
+    "isoCode": "BH",
+    "languageSite": 0,
+    "languageText": "",
+    "parentId": 0,
+    "regionId": 1877,
+    "regionName": "Bahrain",
+    "regionType": 0
+  },
+  {
+    "isoCode": "OM",
+    "languageSite": 0,
+    "languageText": "",
+    "parentId": 0,
+    "regionId": 1861,
+    "regionName": "Oman",
+    "regionType": 0
+  },
+  {
+    "isoCode": "KW",
+    "languageSite": 1,
+    "languageText": "Kuwait",
+    "parentId": 0,
+    "regionId": 1859,
+    "regionName": "Kuwait",
+    "regionType": 0,
+    "tips": "For faster delivery, put your address in English."
+  },
+  {
+    "isoCode": "QA",
+    "languageSite": 0,
+    "languageText": "",
+    "parentId": 0,
+    "regionId": 1868,
+    "regionName": "Qatar",
+    "regionType": 0
+  },
+  {
+    "isoCode": "AE",
+    "languageSite": 0,
+    "languageText": "",
+    "parentId": 0,
+    "regionId": 1878,
+    "regionName": "United Arab Emirates",
+    "regionType": 0,
+    "tips": "For faster delivery, put your address in English."
+  }
+]

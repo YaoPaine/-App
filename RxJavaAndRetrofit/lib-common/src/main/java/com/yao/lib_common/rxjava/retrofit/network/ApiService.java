@@ -1,6 +1,8 @@
 package com.yao.lib_common.rxjava.retrofit.network;
 
 import com.yao.lib_common.rxjava.retrofit.model.entity.BaseResult;
+import com.yao.lib_common.rxjava.retrofit.model.entity.Country;
+import com.yao.lib_common.rxjava.retrofit.model.entity.Result;
 import com.yao.lib_common.rxjava.retrofit.model.entity.news.NewsRequestModel;
 
 import java.util.Map;
@@ -32,4 +34,8 @@ public interface ApiService {
     @Headers({"Content-Type: application/json;charset=UTF-8"})
     @POST
     Observable<BaseResult<String>> postWithMapParam(@Url String path, @Body Map<String, Object> map);
+
+    @Headers({"Content-Type: application/json;charset=UTF-8"})
+    @POST
+    Observable<Result<Country>> postWithMap(@Url String path, @Body Map<String, Object> map);
 }

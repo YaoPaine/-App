@@ -33,6 +33,13 @@
         android:padding="10dp"
         android:text="调用组件某个类的某个方法" />
 
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp10"
+        android:text="获取jollychic数据" />
+
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"

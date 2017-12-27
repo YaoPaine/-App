@@ -1,0 +1,1726 @@
+{
+  "message": "Success",
+  "messageCode": "0",
+  "messageType": 0,
+  "regionList": [
+    {
+      "isoCode": "AL",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1851,
+      "regionName": "Albania",
+      "regionType": 0
+    },
+    {
+      "isoCode": "AD",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8860,
+      "regionName": "Andorra",
+      "regionType": 0
+    },
+    {
+      "isoCode": "AG",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8864,
+      "regionName": "Antigua and Barbuda",
+      "regionType": 0
+    },
+    {
+      "isoCode": "AR",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1827,
+      "regionName": "Argentina",
+      "regionType": 0
+    },
+    {
+      "isoCode": "AU",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1812,
+      "regionName": "Australia",
+      "regionType": 0
+    },
+    {
+      "isoCode": "AT",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1803,
+      "regionName": "Austria",
+      "regionType": 0
+    },
+    {
+      "isoCode": "BS",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8784,
+      "regionName": "Bahamas",
+      "regionType": 0
+    },
+    {
+      "isoCode": "BH",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1877,
+      "regionName": "Bahrain",
+      "regionType": 0
+    },
+    {
+      "languageSite": 0,
+      "languageText": "Bangladesh",
+      "parentId": 0,
+      "regionId": 9184,
+      "regionName": "Bangladesh",
+      "regionType": 0
+    },
+    {
+      "isoCode": "BB",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8785,
+      "regionName": "Barbados",
+      "regionType": 0
+    },
+    {
+      "isoCode": "BY",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1834,
+      "regionName": "Belarus",
+      "regionType": 0
+    },
+    {
+      "isoCode": "BE",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1798,
+      "regionName": "Belgium",
+      "regionType": 0
+    },
+    {
+      "isoCode": "BZ",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8866,
+      "regionName": "Belize",
+      "regionType": 0
+    },
+    {
+      "isoCode": "BJ",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8677,
+      "regionName": "Benin",
+      "regionType": 0
+    },
+    {
+      "isoCode": "BM",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8868,
+      "regionName": "Bermuda",
+      "regionType": 0
+    },
+    {
+      "isoCode": "BT",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8997,
+      "regionName": "Bhutan",
+      "regionType": 0
+    },
+    {
+      "isoCode": "BO",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1896,
+      "regionName": "Bolivia",
+      "regionType": 0
+    },
+    {
+      "isoCode": "BA",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1844,
+      "regionName": "Bosnia and Herzegovina",
+      "regionType": 0
+    },
+    {
+      "isoCode": "BW",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8959,
+      "regionName": "Botswana",
+      "regionType": 0
+    },
+    {
+      "isoCode": "BR",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1824,
+      "regionName": "Brazil",
+      "regionType": 0
+    },
+    {
+      "isoCode": "BN",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1790,
+      "regionName": "Brunei",
+      "regionType": 0
+    },
+    {
+      "isoCode": "BG",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1850,
+      "regionName": "Bulgaria",
+      "regionType": 0
+    },
+    {
+      "isoCode": "BF",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8960,
+      "regionName": "Burkina Faso",
+      "regionType": 0
+    },
+    {
+      "isoCode": "BI",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8961,
+      "regionName": "Burundi",
+      "regionType": 0
+    },
+    {
+      "isoCode": "KH",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1787,
+      "regionName": "Cambodia",
+      "regionType": 0
+    },
+    {
+      "isoCode": "CM",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1904,
+      "regionName": "Cameroon",
+      "regionType": 0
+    },
+    {
+      "isoCode": "CA",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1784,
+      "regionName": "Canada",
+      "regionType": 0
+    },
+    {
+      "isoCode": "IC",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 9002,
+      "regionName": "Canary Islands",
+      "regionType": 0
+    },
+    {
+      "isoCode": "CV",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8962,
+      "regionName": "Cape Verde",
+      "regionType": 0
+    },
+    {
+      "isoCode": "KY",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8787,
+      "regionName": "Cayman Islands",
+      "regionType": 0
+    },
+    {
+      "isoCode": "CF",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8963,
+      "regionName": "Central African Republic",
+      "regionType": 0
+    },
+    {
+      "isoCode": "TD",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8964,
+      "regionName": "Chad",
+      "regionType": 0
+    },
+    {
+      "isoCode": "CL",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1890,
+      "regionName": "Chile",
+      "regionType": 0
+    },
+    {
+      "isoCode": "CN",
+      "languageSite": 10,
+      "languageText": "China(P.R.C)",
+      "parentId": 0,
+      "regionId": 1954,
+      "regionName": "China(P.R.C)",
+      "regionType": 0
+    },
+    {
+      "isoCode": "KM",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8965,
+      "regionName": "Comoros",
+      "regionType": 0
+    },
+    {
+      "isoCode": "CD",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8966,
+      "regionName": "Congo(Democratic Republic)",
+      "regionType": 0
+    },
+    {
+      "isoCode": "CG",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8967,
+      "regionName": "Congo(Republic)",
+      "regionType": 0
+    },
+    {
+      "isoCode": "CK",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8770,
+      "regionName": "Cook Islands",
+      "regionType": 0
+    },
+    {
+      "isoCode": "CR",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1898,
+      "regionName": "Costa Rica",
+      "regionType": 0
+    },
+    {
+      "isoCode": "CI",
+      "languageSite": 0,
+      "languageText": "Cote D'Ivoire",
+      "parentId": 0,
+      "regionId": 8968,
+      "regionName": "Cote D'Ivoire",
+      "regionType": 0
+    },
+    {
+      "isoCode": "HR",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1842,
+      "regionName": "Croatia",
+      "regionType": 0
+    },
+    {
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 238610,
+      "regionName": "Cyprus",
+      "regionType": 0
+    },
+    {
+      "isoCode": "CZ",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1833,
+      "regionName": "Czech Republic",
+      "regionType": 0
+    },
+    {
+      "isoCode": "DK",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1807,
+      "regionName": "Denmark",
+      "regionType": 0
+    },
+    {
+      "isoCode": "DJ",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8969,
+      "regionName": "Djibouti",
+      "regionType": 0
+    },
+    {
+      "isoCode": "TL",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8999,
+      "regionName": "East Timor",
+      "regionType": 0
+    },
+    {
+      "isoCode": "EC",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1897,
+      "regionName": "Ecuador",
+      "regionType": 0
+    },
+    {
+      "isoCode": "EG",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1924,
+      "regionName": "Egypt",
+      "regionType": 0
+    },
+    {
+      "isoCode": "SV",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1886,
+      "regionName": "El Salvador",
+      "regionType": 0
+    },
+    {
+      "isoCode": "GQ",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8970,
+      "regionName": "Equatorial Guinea",
+      "regionType": 0
+    },
+    {
+      "isoCode": "ER",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8971,
+      "regionName": "Eritrea",
+      "regionType": 0
+    },
+    {
+      "isoCode": "EE",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1836,
+      "regionName": "Estonia",
+      "regionType": 0
+    },
+    {
+      "isoCode": "ET",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1958,
+      "regionName": "Ethiopia",
+      "regionType": 0
+    },
+    {
+      "isoCode": "FO",
+      "languageSite": 0,
+      "languageText": "Faroe Islands",
+      "parentId": 0,
+      "regionId": 8870,
+      "regionName": "Faroe Islands",
+      "regionType": 0
+    },
+    {
+      "isoCode": "FJ",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8773,
+      "regionName": "Fiji",
+      "regionType": 0
+    },
+    {
+      "isoCode": "FI",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1808,
+      "regionName": "Finland",
+      "regionType": 0
+    },
+    {
+      "isoCode": "FR",
+      "languageSite": 0,
+      "languageText": "France",
+      "parentId": 0,
+      "regionId": 1794,
+      "regionName": "France",
+      "regionType": 0
+    },
+    {
+      "isoCode": "GF",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8874,
+      "regionName": "French Guiana",
+      "regionType": 0
+    },
+    {
+      "isoCode": "PF",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8771,
+      "regionName": "French Polynesia",
+      "regionType": 0
+    },
+    {
+      "isoCode": "GA",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8972,
+      "regionName": "Gabon",
+      "regionType": 0
+    },
+    {
+      "isoCode": "GM",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8973,
+      "regionName": "Gambia",
+      "regionType": 0
+    },
+    {
+      "isoCode": "GE",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1864,
+      "regionName": "Georgia",
+      "regionType": 0
+    },
+    {
+      "isoCode": "DE",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1797,
+      "regionName": "Germany",
+      "regionType": 0
+    },
+    {
+      "isoCode": "GH",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8854,
+      "regionName": "Ghana",
+      "regionType": 0
+    },
+    {
+      "isoCode": "GI",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8781,
+      "regionName": "Gibraltar",
+      "regionType": 0
+    },
+    {
+      "isoCode": "GR",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1804,
+      "regionName": "Greece",
+      "regionType": 0
+    },
+    {
+      "isoCode": "GL",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8782,
+      "regionName": "Greenland",
+      "regionType": 0
+    },
+    {
+      "isoCode": "GD",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8876,
+      "regionName": "Grenada",
+      "regionType": 0
+    },
+    {
+      "isoCode": "GP",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8878,
+      "regionName": "Guadeloupe",
+      "regionType": 0
+    },
+    {
+      "isoCode": "GT",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1885,
+      "regionName": "Guatemala",
+      "regionType": 0
+    },
+    {
+      "isoCode": "GG",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8880,
+      "regionName": "Guernsey",
+      "regionType": 0
+    },
+    {
+      "isoCode": "GN",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8974,
+      "regionName": "Guinea",
+      "regionType": 0
+    },
+    {
+      "isoCode": "GW",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8975,
+      "regionName": "Guinea-Bissau",
+      "regionType": 0
+    },
+    {
+      "isoCode": "GY",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1826,
+      "regionName": "Guyana",
+      "regionType": 0
+    },
+    {
+      "isoCode": "HT",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8882,
+      "regionName": "Haiti",
+      "regionType": 0
+    },
+    {
+      "isoCode": "HN",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1892,
+      "regionName": "Honduras",
+      "regionType": 0
+    },
+    {
+      "isoCode": "HK",
+      "languageSite": 0,
+      "languageText": "Hong Kong",
+      "parentId": 0,
+      "regionId": 1955,
+      "regionName": "Hong Kong",
+      "regionType": 0
+    },
+    {
+      "isoCode": "HU",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1848,
+      "regionName": "Hungary",
+      "regionType": 0
+    },
+    {
+      "isoCode": "IS",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1811,
+      "regionName": "Iceland",
+      "regionType": 0
+    },
+    {
+      "isoCode": "IN",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1865,
+      "regionName": "India",
+      "regionType": 0
+    },
+    {
+      "isoCode": "ID",
+      "languageSite": 0,
+      "languageText": "Indonesia",
+      "parentId": 0,
+      "regionId": 1788,
+      "regionName": "Indonesia",
+      "regionType": 0
+    },
+    {
+      "isoCode": "IE",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1801,
+      "regionName": "Ireland",
+      "regionType": 0
+    },
+    {
+      "isoCode": "IL",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1871,
+      "regionName": "Israel",
+      "regionType": 0
+    },
+    {
+      "isoCode": "IT",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1796,
+      "regionName": "Italy",
+      "regionType": 0
+    },
+    {
+      "isoCode": "JP",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1815,
+      "regionName": "Japan",
+      "regionType": 0,
+      "tips": "Please use Japanese for your name and address field."
+    },
+    {
+      "isoCode": "JE",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8884,
+      "regionName": "Jersey",
+      "regionType": 0
+    },
+    {
+      "isoCode": "JO",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1879,
+      "regionName": "Jordan",
+      "regionType": 0
+    },
+    {
+      "isoCode": "KZ",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1819,
+      "regionName": "Kazakhstan",
+      "regionType": 0
+    },
+    {
+      "isoCode": "KE",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1944,
+      "regionName": "Kenya",
+      "regionType": 0
+    },
+    {
+      "isoCode": "KI",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8886,
+      "regionName": "Kiribati",
+      "regionType": 0
+    },
+    {
+      "isoCode": "KP",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1818,
+      "regionName": "Korea(Democratic Republic)",
+      "regionType": 0
+    },
+    {
+      "isoCode": "KR",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1816,
+      "regionName": "Korea(Republic)",
+      "regionType": 0
+    },
+    {
+      "isoCode": "KS",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8888,
+      "regionName": "Kosovo",
+      "regionType": 0
+    },
+    {
+      "isoCode": "KW",
+      "languageSite": 1,
+      "languageText": "Kuwait",
+      "parentId": 0,
+      "regionId": 1859,
+      "regionName": "Kuwait",
+      "regionType": 0,
+      "tips": "For faster delivery, put your address in English."
+    },
+    {
+      "isoCode": "KG",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1820,
+      "regionName": "Kyrgyzstan",
+      "regionType": 0
+    },
+    {
+      "isoCode": "LA",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1882,
+      "regionName": "Laos",
+      "regionType": 0
+    },
+    {
+      "isoCode": "LV",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1837,
+      "regionName": "Latvia",
+      "regionType": 0
+    },
+    {
+      "isoCode": "LB",
+      "languageSite": 1,
+      "languageText": "Lebanon",
+      "parentId": 0,
+      "regionId": 1863,
+      "regionName": "Lebanon",
+      "regionType": 0
+    },
+    {
+      "isoCode": "LS",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8976,
+      "regionName": "Lesotho",
+      "regionType": 0
+    },
+    {
+      "isoCode": "LR",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8977,
+      "regionName": "Liberia",
+      "regionType": 0
+    },
+    {
+      "isoCode": "LI",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8890,
+      "regionName": "Liechtenstein",
+      "regionType": 0
+    },
+    {
+      "isoCode": "LT",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1838,
+      "regionName": "Lithuania",
+      "regionType": 0
+    },
+    {
+      "isoCode": "LU",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8679,
+      "regionName": "Luxembourg",
+      "regionType": 0
+    },
+    {
+      "isoCode": "MO",
+      "languageSite": 0,
+      "languageText": "Macau",
+      "parentId": 0,
+      "regionId": 9206,
+      "regionName": "Macau",
+      "regionType": 0
+    },
+    {
+      "isoCode": "MK",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 2303,
+      "regionName": "Macedonia",
+      "regionType": 0
+    },
+    {
+      "isoCode": "MG",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8978,
+      "regionName": "Madagascar",
+      "regionType": 0
+    },
+    {
+      "isoCode": "MW",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8979,
+      "regionName": "Malawi",
+      "regionType": 0
+    },
+    {
+      "isoCode": "MY",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1785,
+      "regionName": "Malaysia",
+      "regionType": 0
+    },
+    {
+      "isoCode": "ML",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8980,
+      "regionName": "Mali",
+      "regionType": 0
+    },
+    {
+      "isoCode": "MT",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1806,
+      "regionName": "Malta",
+      "regionType": 0
+    },
+    {
+      "isoCode": "MQ",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8894,
+      "regionName": "Martinique",
+      "regionType": 0
+    },
+    {
+      "isoCode": "MR",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8981,
+      "regionName": "Mauritania",
+      "regionType": 0
+    },
+    {
+      "isoCode": "MU",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8676,
+      "regionName": "Mauritius",
+      "regionType": 0
+    },
+    {
+      "isoCode": "MX",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1828,
+      "regionName": "Mexico",
+      "regionType": 0
+    },
+    {
+      "isoCode": "MD",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1839,
+      "regionName": "Moldova",
+      "regionType": 0
+    },
+    {
+      "isoCode": "MC",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8898,
+      "regionName": "Monaco",
+      "regionType": 0
+    },
+    {
+      "isoCode": "MN",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1817,
+      "regionName": "Mongolia",
+      "regionType": 0
+    },
+    {
+      "isoCode": "MS",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8902,
+      "regionName": "Montserrat",
+      "regionType": 0
+    },
+    {
+      "isoCode": "MA",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1947,
+      "regionName": "Morocco",
+      "regionType": 0
+    },
+    {
+      "isoCode": "MZ",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8984,
+      "regionName": "Mozambique",
+      "regionType": 0
+    },
+    {
+      "isoCode": "MM",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8766,
+      "regionName": "Myanmar",
+      "regionType": 0
+    },
+    {
+      "isoCode": "NA",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8944,
+      "regionName": "Namibia",
+      "regionType": 0
+    },
+    {
+      "isoCode": "NR",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8904,
+      "regionName": "Nauru",
+      "regionType": 0
+    },
+    {
+      "isoCode": "NP",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1866,
+      "regionName": "Nepal",
+      "regionType": 0
+    },
+    {
+      "isoCode": "NL",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1800,
+      "regionName": "Netherlands",
+      "regionType": 0
+    },
+    {
+      "isoCode": "NC",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8774,
+      "regionName": "New Caledonia",
+      "regionType": 0
+    },
+    {
+      "isoCode": "NZ",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1813,
+      "regionName": "New Zealand",
+      "regionType": 0
+    },
+    {
+      "isoCode": "NI",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8908,
+      "regionName": "Nicaragua",
+      "regionType": 0
+    },
+    {
+      "isoCode": "NE",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8985,
+      "regionName": "Niger",
+      "regionType": 0
+    },
+    {
+      "isoCode": "NG",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1914,
+      "regionName": "Nigeria",
+      "regionType": 0
+    },
+    {
+      "isoCode": "NU",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8910,
+      "regionName": "Niue",
+      "regionType": 0
+    },
+    {
+      "isoCode": "NO",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1809,
+      "regionName": "Norway",
+      "regionType": 0
+    },
+    {
+      "isoCode": "OM",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1861,
+      "regionName": "Oman",
+      "regionType": 0
+    },
+    {
+      "isoCode": "PK",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1874,
+      "regionName": "Pakistan",
+      "regionType": 0
+    },
+    {
+      "isoCode": "PA",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1831,
+      "regionName": "Panama",
+      "regionType": 0
+    },
+    {
+      "isoCode": "PG",
+      "languageSite": 0,
+      "languageText": "Papua New Guinea",
+      "parentId": 0,
+      "regionId": 1814,
+      "regionName": "Papua New Guinea",
+      "regionType": 0
+    },
+    {
+      "isoCode": "PY",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1891,
+      "regionName": "Paraguay",
+      "regionType": 0
+    },
+    {
+      "isoCode": "PE",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1830,
+      "regionName": "Peru",
+      "regionType": 0
+    },
+    {
+      "isoCode": "PH",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 2005,
+      "regionName": "Philippines",
+      "regionType": 0
+    },
+    {
+      "isoCode": "PL",
+      "languageSite": 0,
+      "languageText": "Poland",
+      "parentId": 0,
+      "regionId": 1847,
+      "regionName": "Poland",
+      "regionType": 0
+    },
+    {
+      "isoCode": "PT",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1805,
+      "regionName": "Portugal",
+      "regionType": 0
+    },
+    {
+      "languageSite": 0,
+      "languageText": "Puerto Rico",
+      "parentId": 0,
+      "regionId": 283721,
+      "regionName": "Puerto Rico",
+      "regionType": 0
+    },
+    {
+      "isoCode": "QA",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1868,
+      "regionName": "Qatar",
+      "regionType": 0
+    },
+    {
+      "isoCode": "RE",
+      "languageSite": 0,
+      "languageText": "Reunion",
+      "parentId": 0,
+      "regionId": 1931,
+      "regionName": "Reunion",
+      "regionType": 0
+    },
+    {
+      "isoCode": "RO",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1849,
+      "regionName": "Romania",
+      "regionType": 0
+    },
+    {
+      "isoCode": "RU",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1832,
+      "regionName": "Russia",
+      "regionType": 0
+    },
+    {
+      "isoCode": "RW",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8986,
+      "regionName": "Rwanda",
+      "regionType": 0
+    },
+    {
+      "isoCode": "SH",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8988,
+      "regionName": "Saint Helena",
+      "regionType": 0
+    },
+    {
+      "isoCode": "LC",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8916,
+      "regionName": "Saint Lucia",
+      "regionType": 0
+    },
+    {
+      "isoCode": "WS",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8779,
+      "regionName": "Samoa",
+      "regionType": 0
+    },
+    {
+      "isoCode": "SM",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8926,
+      "regionName": "San Marino",
+      "regionType": 0
+    },
+    {
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8987,
+      "regionName": "Sao Tome and Principe",
+      "regionType": 0
+    },
+    {
+      "isoCode": "SA",
+      "languageSite": 1,
+      "languageText": "Saudi Arabia",
+      "parentId": 0,
+      "regionId": 1876,
+      "regionName": "Saudi Arabia",
+      "regionType": 0
+    },
+    {
+      "isoCode": "SN",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8989,
+      "regionName": "Senegal",
+      "regionType": 0
+    },
+    {
+      "isoCode": "RS",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1843,
+      "regionName": "Serbia",
+      "regionType": 0
+    },
+    {
+      "isoCode": "SL",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8990,
+      "regionName": "Sierra Leone",
+      "regionType": 0
+    },
+    {
+      "isoCode": "SG",
+      "languageSite": 0,
+      "languageText": "Singapore",
+      "parentId": 0,
+      "regionId": 2004,
+      "regionName": "Singapore",
+      "regionType": 0
+    },
+    {
+      "isoCode": "SK",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1840,
+      "regionName": "Slovakia",
+      "regionType": 0
+    },
+    {
+      "isoCode": "SI",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1841,
+      "regionName": "Slovenia",
+      "regionType": 0
+    },
+    {
+      "isoCode": "SB",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8928,
+      "regionName": "Solomon Islands",
+      "regionType": 0
+    },
+    {
+      "isoCode": "SO",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8991,
+      "regionName": "Somalia",
+      "regionType": 0
+    },
+    {
+      "isoCode": "ZA",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1951,
+      "regionName": "South Africa",
+      "regionType": 0
+    },
+    {
+      "isoCode": "ES",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1795,
+      "regionName": "Spain",
+      "regionType": 0
+    },
+    {
+      "isoCode": "LK",
+      "languageSite": 0,
+      "languageText": "Sri Lanka",
+      "parentId": 0,
+      "regionId": 1857,
+      "regionName": "Sri Lanka",
+      "regionType": 0
+    },
+    {
+      "isoCode": "SR",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8930,
+      "regionName": "Suriname",
+      "regionType": 0
+    },
+    {
+      "isoCode": "SZ",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8992,
+      "regionName": "Swaziland",
+      "regionType": 0
+    },
+    {
+      "isoCode": "SE",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1810,
+      "regionName": "Sweden",
+      "regionType": 0
+    },
+    {
+      "isoCode": "CH",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1802,
+      "regionName": "Switzerland",
+      "regionType": 0
+    },
+    {
+      "isoCode": "TW",
+      "languageSite": 8,
+      "languageText": "Taiwan",
+      "parentId": 0,
+      "regionId": 1957,
+      "regionName": "Taiwan",
+      "regionType": 0
+    },
+    {
+      "isoCode": "TJ",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1821,
+      "regionName": "Tajikistan",
+      "regionType": 0
+    },
+    {
+      "isoCode": "TZ",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8707,
+      "regionName": "Tanzania",
+      "regionType": 0
+    },
+    {
+      "isoCode": "TH",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1786,
+      "regionName": "Thailand",
+      "regionType": 0
+    },
+    {
+      "isoCode": "TK",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8932,
+      "regionName": "Tokelau",
+      "regionType": 0
+    },
+    {
+      "isoCode": "TO",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8769,
+      "regionName": "Tonga",
+      "regionType": 0
+    },
+    {
+      "isoCode": "TT",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1901,
+      "regionName": "Trinidad and Tobago",
+      "regionType": 0
+    },
+    {
+      "isoCode": "TR",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1856,
+      "regionName": "Turkey",
+      "regionType": 0
+    },
+    {
+      "isoCode": "TC",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8934,
+      "regionName": "Turks and Caicos Islands",
+      "regionType": 0
+    },
+    {
+      "isoCode": "TV",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8936,
+      "regionName": "Tuvalu",
+      "regionType": 0
+    },
+    {
+      "isoCode": "UA",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1835,
+      "regionName": "Ukraine",
+      "regionType": 0
+    },
+    {
+      "isoCode": "AE",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1878,
+      "regionName": "United Arab Emirates",
+      "regionType": 0,
+      "tips": "For faster delivery, put your address in English."
+    },
+    {
+      "isoCode": "GB",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1793,
+      "regionName": "United Kingdom",
+      "regionType": 0
+    },
+    {
+      "isoCode": "US",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1783,
+      "regionName": "United States",
+      "regionType": 0
+    },
+    {
+      "isoCode": "UY",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1884,
+      "regionName": "Uruguay",
+      "regionType": 0
+    },
+    {
+      "isoCode": "UZ",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1822,
+      "regionName": "Uzbekistan",
+      "regionType": 0
+    },
+    {
+      "isoCode": "VU",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8775,
+      "regionName": "Vanuatu",
+      "regionType": 0
+    },
+    {
+      "isoCode": "VA",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8938,
+      "regionName": "Vatican City",
+      "regionType": 0
+    },
+    {
+      "isoCode": "VN",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 1791,
+      "regionName": "Vietnam",
+      "regionType": 0
+    },
+    {
+      "isoCode": "WF",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8940,
+      "regionName": "Wallis and Futuna",
+      "regionType": 0
+    },
+    {
+      "isoCode": "EH",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8983,
+      "regionName": "Western Sahara",
+      "regionType": 0
+    },
+    {
+      "isoCode": "ZM",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8995,
+      "regionName": "Zambia",
+      "regionType": 0
+    },
+    {
+      "isoCode": "ZW",
+      "languageSite": 0,
+      "languageText": "",
+      "parentId": 0,
+      "regionId": 8996,
+      "regionName": "Zimbabwe",
+      "regionType": 0
+    }
+  ],
+  "result": 0
+}

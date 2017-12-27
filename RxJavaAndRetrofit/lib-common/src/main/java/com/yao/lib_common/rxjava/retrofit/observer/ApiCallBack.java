@@ -40,8 +40,8 @@ public abstract class ApiCallBack<T> extends DisposableObserver<T> {
         } else {
             onSuccessNotNull(data);
         }
-        new Container().init();
-        new Tank().init();
+//        new Container().init();
+//        new Tank().init();
     }
 
     @Override

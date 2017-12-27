@@ -2,9 +2,12 @@ package com.yao.lib_common.rxjava.retrofit.network;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.yao.lib_common.rxjava.retrofit.gson.BaseResultJsonDeserializer;
+import com.yao.lib_common.rxjava.retrofit.gson.GsonUtils;
 import com.yao.lib_common.rxjava.retrofit.gson.ResultJsonDeserializer;
 import com.yao.lib_common.rxjava.retrofit.model.api.ApiConstants;
 import com.yao.lib_common.rxjava.retrofit.model.entity.BaseResult;
+import com.yao.lib_common.rxjava.retrofit.model.entity.Result;
 
 import java.util.concurrent.TimeUnit;
 
@@ -41,15 +44,22 @@ public class RxService {
                             .connectTimeout(CONN_TIMEOUT, TimeUnit.SECONDS)
                             .build();
 
-                    Gson gson = new GsonBuilder()
-                            .registerTypeHierarchyAdapter(BaseResult.class,
-                                    new ResultJsonDeserializer()).create();
+//                    Gson gson = new GsonBuilder()
+//                            .registerTypeHierarchyAdapter(BaseResult.class,
+//                                    new BaseResultJsonDeserializer()).create();
 
-                    mRetrofit = new Retrofit.Builder()
-                            .client(okHttpClient)
-                            .addConverterFactory(GsonConverterFactory.create(gson))
+//                    Gson gson = new GsonBuilder().registerTypeHierarchyAdapter(Result.class,
+//                            new ResultJsonDeserializer()).create();
+                    Gson gson = GsonUtils.instance();
+
+                    Retrofit.Builder builder = new Retrofit.Builder()
+                            .client(okHttpClient);
+
+                    builder.addConverterFactory(GsonConverterFactory.create(gson));
+
+                    mRetrofit = builder
                             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
-                            .baseUrl(ApiConstants.BASE_URL)
+                            .baseUrl(ApiConstants.JOLLY_CHIC_URL)
                             .build();
                 }
             }
