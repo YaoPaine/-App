@@ -273,7 +273,7 @@ public class MainActivity extends BaseActivity {
 //                            if (districtList != null && districtList.size() > 1) {
 //                                writeDataToStorage("District4", districtList, data.getSeq());
 //                            }
-                            writeDataToStorage("District5", districtList, data.getSeq());
+                            writeDataToStorage("District5                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ", districtList, data.getSeq());
                             try {
                                 Thread.sleep(2000);
                             } catch (InterruptedException e) {
