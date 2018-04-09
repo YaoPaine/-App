@@ -262,7 +262,7 @@ public class SignBuilder {
         // key="android_lk98f83",flvjk342589fdgjl34m9sdufg234oiy
 
         // paramHashMap.put("appTimestamp", System.currentTimeMillis() + "");
-        paramHashMap.put("appTimestamp", "1513929431686");
+        paramHashMap.put("appTimestamp", "1518165997565");
         paramHashMap.put("appKey", "android_lk98f83");
         paramHashMap.put("sign", sign(paramHashMap, data.i()));
         // }
