@@ -1,0 +1,5 @@
+private static native void setFieldFlag(Field field);
+
+private static native void replaceMethod(Method dest, Method src);
+
+private static native boolean setup(boolean isArt, int apilevel);

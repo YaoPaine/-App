@@ -3,6 +3,7 @@
 
 # Sets the minimum version of CMake required to build the native library.
 
+# 指定cmake版本
 cmake_minimum_required(VERSION 3.4.1)
 
 # Creates and names a library, sets it as either STATIC
@@ -10,14 +11,20 @@ cmake_minimum_required(VERSION 3.4.1)
 # You can define multiple libraries, and CMake builds them for you.
 # Gradle automatically packages shared libraries with your APK.
 
+# add_library()命令用于向CMake添加依赖源文件或库
+# 指令需传入三个参数（函数库名称、库类型、依赖源文件相对路径）
 add_library( # Sets the name of the library.
-             native-lib
+             # 生成函数库的名称，即libnative-lib.so或libnative-lib.a(lib和.so/.a默认缺省)
+             hellonative
 
+             # 生成库类型：动态库为SHARED，静态库为STATIC
              # Sets the library as a shared library.
              SHARED
 
+             # 依赖的c/cpp文件(相对路径)
              # Provides a relative path to your source file(s).
-             src/main/cpp/native-lib.cpp )
+             src/main/cpp/JniLearning.cpp
+             src/main/cpp/HelloJni.c )
 
 # Searches for a specified prebuilt library and stores the path as a
 # variable. Because CMake includes system libraries in the search path by
@@ -25,20 +32,28 @@ add_library( # Sets the name of the library.
 # you want to add. CMake verifies that the library exists before
 # completing its build.
 
+# find_library()命令用于定位NDK中的库
+# 需传入两个参数(path变量、ndk库名称)
 find_library( # Sets the name of the path variable.
+              # 设置path变量的名称，这里为NDK中的日志库
               log-lib
 
               # Specifies the name of the NDK library that
               # you want CMake to locate.
+              #指定cmake查询库的名称
+              #即在ndk开发包中查询liblog.so函数库，将其路径赋值给log-lib
               log )
 
 # Specifies libraries CMake should link to your target library. You
 # can link multiple libraries, such as libraries you define in this
 # build script, prebuilt third-party libraries, or system libraries.
 
+#用于指定要关联到的原生库的库
 target_link_libraries( # Specifies the target library.
-                       native-lib
+                       # 指定目标库，与上面指定的函数库名一致
+                       hellonative
 
                        # Links the target library to the log library
                        # included in the NDK.
+                       # 链接的库，根据log-lib变量对应liblog.so函数库
                        ${log-lib} )
