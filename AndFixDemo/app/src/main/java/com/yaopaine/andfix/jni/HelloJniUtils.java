@@ -19,4 +19,6 @@ public class HelloJniUtils {
     public static native boolean isNative();
 
     public static native String getMessage();
+
+    public static native void setup(int apilevel);
 }

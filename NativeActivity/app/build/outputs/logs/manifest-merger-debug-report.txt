@@ -1,0 +1,147 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml:3:1-31:12
+INJECTED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml:3:1-31:12
+INJECTED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml:3:1-31:12
+INJECTED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml:3:1-31:12
+MERGED from [com.android.support:appcompat-v7:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/b2058d8951216ac28232efa7790791f4/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/7c4b4ba3b8f2d7e520f876d3978d5622/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.4.0.aar/35365ac7f7e7ca19ec7e4e1d1f4010e0/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.4.0.aar/0869da43ae473a3b618b5278b378f6ee/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/2a431534fc71e4020911c4d2b7b9167f/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-fragment-25.4.0.aar/4e8809bf8c1efe8a8e14e24922c4994a/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.4.0.aar/1ecdc8c80443d3bd1b1a57c5faa71c55/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.4.0.aar/2644bb459b23cd524c000ef30be7254d/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.4.0.aar/7c5e5a5d5bad498f860577e00600daa6/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-compat-25.4.0.aar/26072563cadc60b4f374263c74512382/AndroidManifest.xml:17:1-31:12
+INJECTED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml:3:1-31:12
+INJECTED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml:3:1-31:12
+INJECTED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml:3:1-31:12
+	package
+		ADDED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml:4:11-48
+		INJECTED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml
+		INJECTED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml:6:11-36
+		INJECTED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml
+		INJECTED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml:3:11-69
+	android:versionCode
+		ADDED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml:5:11-34
+		INJECTED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml
+		INJECTED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml
+application
+ADDED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml:9:3-29:17
+MERGED from [com.android.support:appcompat-v7:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/b2058d8951216ac28232efa7790791f4/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/b2058d8951216ac28232efa7790791f4/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/7c4b4ba3b8f2d7e520f876d3978d5622/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/7c4b4ba3b8f2d7e520f876d3978d5622/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.4.0.aar/35365ac7f7e7ca19ec7e4e1d1f4010e0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.4.0.aar/35365ac7f7e7ca19ec7e4e1d1f4010e0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.4.0.aar/0869da43ae473a3b618b5278b378f6ee/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.4.0.aar/0869da43ae473a3b618b5278b378f6ee/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/2a431534fc71e4020911c4d2b7b9167f/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/2a431534fc71e4020911c4d2b7b9167f/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-fragment-25.4.0.aar/4e8809bf8c1efe8a8e14e24922c4994a/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-fragment-25.4.0.aar/4e8809bf8c1efe8a8e14e24922c4994a/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.4.0.aar/1ecdc8c80443d3bd1b1a57c5faa71c55/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.4.0.aar/1ecdc8c80443d3bd1b1a57c5faa71c55/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.4.0.aar/2644bb459b23cd524c000ef30be7254d/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.4.0.aar/2644bb459b23cd524c000ef30be7254d/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.4.0.aar/7c5e5a5d5bad498f860577e00600daa6/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.4.0.aar/7c5e5a5d5bad498f860577e00600daa6/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-compat-25.4.0.aar/26072563cadc60b4f374263c74512382/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-compat-25.4.0.aar/26072563cadc60b4f374263c74512382/AndroidManifest.xml:25:5-29:19
+	android:label
+		ADDED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml:13:7-39
+	android:hasCode
+		ADDED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml:14:7-30
+	android:fullBackupContent
+		ADDED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml:11:7-40
+	android:icon
+		ADDED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml:12:7-41
+	android:allowBackup
+		ADDED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml:10:7-34
+activity#android.app.NativeActivity
+ADDED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml:18:5-28:16
+	android:label
+		ADDED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml:19:15-47
+	android:configChanges
+		ADDED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml:20:15-65
+	android:name
+		ADDED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml:18:15-56
+meta-data#android.app.lib_name
+ADDED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml:22:7-23:52
+	android:value
+		ADDED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml:23:18-49
+	android:name
+		ADDED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml:22:18-53
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml:24:7-27:23
+action#android.intent.action.MAIN
+ADDED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml:25:9-61
+	android:name
+		ADDED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml:25:17-58
+category#android.intent.category.LAUNCHER
+ADDED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml:26:9-69
+	android:name
+		ADDED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml:26:19-66
+uses-sdk
+INJECTED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml
+INJECTED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/b2058d8951216ac28232efa7790791f4/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/b2058d8951216ac28232efa7790791f4/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/7c4b4ba3b8f2d7e520f876d3978d5622/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/7c4b4ba3b8f2d7e520f876d3978d5622/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.4.0.aar/35365ac7f7e7ca19ec7e4e1d1f4010e0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.4.0.aar/35365ac7f7e7ca19ec7e4e1d1f4010e0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.4.0.aar/0869da43ae473a3b618b5278b378f6ee/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.4.0.aar/0869da43ae473a3b618b5278b378f6ee/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/2a431534fc71e4020911c4d2b7b9167f/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/2a431534fc71e4020911c4d2b7b9167f/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-fragment-25.4.0.aar/4e8809bf8c1efe8a8e14e24922c4994a/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-fragment-25.4.0.aar/4e8809bf8c1efe8a8e14e24922c4994a/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.4.0.aar/1ecdc8c80443d3bd1b1a57c5faa71c55/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.4.0.aar/1ecdc8c80443d3bd1b1a57c5faa71c55/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.4.0.aar/2644bb459b23cd524c000ef30be7254d/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.4.0.aar/2644bb459b23cd524c000ef30be7254d/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.4.0.aar/7c5e5a5d5bad498f860577e00600daa6/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.4.0.aar/7c5e5a5d5bad498f860577e00600daa6/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-compat-25.4.0.aar/26072563cadc60b4f374263c74512382/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-compat-25.4.0.aar/26072563cadc60b4f374263c74512382/AndroidManifest.xml:21:5-23:58
+INJECTED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml
+INJECTED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/b2058d8951216ac28232efa7790791f4/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml
+		ADDED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml
+		INJECTED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml
+		ADDED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml
+		INJECTED from /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/b2058d8951216ac28232efa7790791f4/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.4.0.aar/35365ac7f7e7ca19ec7e4e1d1f4010e0/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.4.0.aar/35365ac7f7e7ca19ec7e4e1d1f4010e0/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.4.0.aar/0869da43ae473a3b618b5278b378f6ee/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.4.0.aar/0869da43ae473a3b618b5278b378f6ee/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/2a431534fc71e4020911c4d2b7b9167f/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/2a431534fc71e4020911c4d2b7b9167f/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-fragment-25.4.0.aar/4e8809bf8c1efe8a8e14e24922c4994a/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-fragment-25.4.0.aar/4e8809bf8c1efe8a8e14e24922c4994a/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.4.0.aar/1ecdc8c80443d3bd1b1a57c5faa71c55/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.4.0.aar/1ecdc8c80443d3bd1b1a57c5faa71c55/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.4.0.aar/2644bb459b23cd524c000ef30be7254d/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.4.0.aar/2644bb459b23cd524c000ef30be7254d/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.4.0.aar/7c5e5a5d5bad498f860577e00600daa6/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.4.0.aar/7c5e5a5d5bad498f860577e00600daa6/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-compat-25.4.0.aar/26072563cadc60b4f374263c74512382/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/support-compat-25.4.0.aar/26072563cadc60b4f374263c74512382/AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:appcompat-v7:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/b2058d8951216ac28232efa7790791f4/AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:appcompat-v7:25.4.0] /home/yaopaine/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/b2058d8951216ac28232efa7790791f4/AndroidManifest.xml:27:13-51

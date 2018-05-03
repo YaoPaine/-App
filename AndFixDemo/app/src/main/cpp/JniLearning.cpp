@@ -1,7 +1,7 @@
 //
 // Created by yaopaine on 4/12/18.
 //
-
+#include <jni.h>
 #include "com_yaopaine_andfix_jni_HelloJniUtils.h"
 
 extern "C" {

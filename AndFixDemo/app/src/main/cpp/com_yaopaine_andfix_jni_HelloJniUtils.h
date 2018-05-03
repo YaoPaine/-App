@@ -39,6 +39,14 @@ JNIEXPORT jboolean JNICALL Java_com_yaopaine_andfix_jni_HelloJniUtils_isNative
 JNIEXPORT jstring JNICALL Java_com_yaopaine_andfix_jni_HelloJniUtils_getMessage
   (JNIEnv *, jclass);
 
+/*
+ * Class:     com_yaopaine_andfix_jni_HelloJniUtils
+ * Method:    setup
+ * Signature: (I)V
+ */
+JNIEXPORT void JNICALL Java_com_yaopaine_andfix_jni_HelloJniUtils_setup
+  (JNIEnv *, jclass, jint);
+
 #ifdef __cplusplus
 }
 #endif

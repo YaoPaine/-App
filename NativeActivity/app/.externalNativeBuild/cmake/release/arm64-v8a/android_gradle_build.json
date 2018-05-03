@@ -1,0 +1,60 @@
+
+{
+	"buildFiles" : 
+	[
+		"/home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/cpp/CMakeLists.txt"
+	],
+	"cFileExtensions" : [ "c" ],
+	"cleanCommands" : 
+	[
+		"/opt/Sdk/cmake/3.6.4111459/bin/cmake --build /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/.externalNativeBuild/cmake/release/arm64-v8a --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"native-activity-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "native-activity",
+			"buildCommand" : "/opt/Sdk/cmake/3.6.4111459/bin/cmake --build /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/.externalNativeBuild/cmake/release/arm64-v8a --target native-activity",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/opt/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/opt/Sdk/ndk-bundle/sysroot  -Dnative_activity_EXPORTS -I/opt/Sdk/ndk-bundle/sources/android/native_app_glue -isystem /opt/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /opt/Sdk/ndk-bundle/sources/android/support/include -isystem /opt/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /opt/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11  -std=gnu++11 -Wall -Werror -O2 -DNDEBUG  -fPIC    -c ",
+					"src" : "/home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/src/main/cpp/main.cpp",
+					"workingDirectory" : "/home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				}
+			],
+			"output" : "/home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/build/intermediates/cmake/release/obj/arm64-v8a/libnative-activity.so",
+			"toolchain" : "5309199789192563349"
+		},
+		"native_app_glue-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "native_app_glue",
+			"buildCommand" : "/opt/Sdk/cmake/3.6.4111459/bin/cmake --build /home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/.externalNativeBuild/cmake/release/arm64-v8a --target native_app_glue",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/opt/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/opt/Sdk/ndk-bundle/sysroot   -isystem /opt/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/opt/Sdk/ndk-bundle/sources/android/native_app_glue/android_native_app_glue.c",
+					"workingDirectory" : "/home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				}
+			],
+			"output" : "/home/yaopaine/AndroidStudioProjects/Learning/NativeActivity/app/.externalNativeBuild/cmake/release/arm64-v8a/libnative_app_glue.a",
+			"toolchain" : "5309199789192563349"
+		}
+	},
+	"toolchains" : 
+	{
+		"5309199789192563349" : 
+		{
+			"cCompilerExecutable" : "/opt/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/opt/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+		}
+	}
+}
