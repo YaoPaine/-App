@@ -1,7 +1,7 @@
 package com.yaopaine.dynamic;
 
-import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -15,20 +15,14 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-import com.yaopaine.andfix.BaseApp;
 import com.yaopaine.andfix.R;
 
 import java.io.File;
-import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.util.Enumeration;
 
 import dalvik.system.DexClassLoader;
-import dalvik.system.DexFile;
-import dalvik.system.PathClassLoader;
 
 /**
  * @Description
@@ -44,20 +38,22 @@ public class LoadActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_load);
-
+        Intent intent = getIntent();
         findViewById(R.id.button1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 loadApk();
             }
         });
-
+        Log.e(TAG, "LoadActivity onCreate: " + intent);
         findViewById(R.id.button2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 loadRes();
             }
         });
+
+
     }
 
     private void loadRes() {
