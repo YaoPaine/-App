@@ -1,6 +1,5 @@
 package com.yao.hotfix;
 
-import android.app.Application;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -13,9 +12,7 @@ import android.widget.Toast;
 
 import com.yaopaine.BasicApp;
 import com.yaopaine.andfix.R;
-import com.yaopaine.dynamic.DynamicLoadActivity;
 import com.yaopaine.dynamic.LoadActivity;
-import com.yaopaine.handler.HandlerActivity;
 import com.yaopaine.helper.AMSHookHelper;
 import com.yaopaine.helper.HookHelper;
 import com.yaopaine.helper.PMSHookHelper;
@@ -78,8 +75,8 @@ public class MainActivity extends AppCompatActivity {
     public void onClick(View view) {
 //        showToast("I'm a bug");
         Intent intent = new Intent();
-        intent.setComponent(new ComponentName("com.yaopaine.aptsample", "com.yaopaine.aptsample.ResourcePluginActivity"));
-        startActivityForResult(intent, 100);
+        intent.setComponent(new ComponentName("com.yaopaine.aptsample", "com.yaopaine.aptsample.MainActivity"));
+        startActivity(intent);
     }
 
     public void onFix(View view) {
@@ -88,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
 //        startActivity(intent);
         Intent intent = new Intent();
         intent.setComponent(new ComponentName("com.yaopaine.aptsample", "com.yaopaine.aptsample.PluginActivity"));
-        startActivity(intent);
+        startActivityForResult(intent,100);
 
 //        try {
 //            HotFixManager.getInstance().init(this);

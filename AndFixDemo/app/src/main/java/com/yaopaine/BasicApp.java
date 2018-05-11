@@ -1,5 +1,6 @@
 package com.yaopaine;
 
+import android.app.Application;
 import android.app.Instrumentation;
 import android.content.Context;
 import android.content.res.AssetManager;
@@ -7,7 +8,7 @@ import android.content.res.Resources;
 import android.os.Environment;
 import android.util.Log;
 
-import com.yaopaine.andfix.BaseApp;
+import com.yaopaine.andfix.R;
 
 import java.io.File;
 import java.lang.reflect.Field;
@@ -22,7 +23,7 @@ import dalvik.system.DexClassLoader;
  * @Version 1.0
  * @Time 5/9/18
  */
-public class BasicApp extends BaseApp {
+public class BasicApp extends Application {
 
     private static Context mContext;
 
@@ -60,7 +61,7 @@ public class BasicApp extends BaseApp {
         ensureStringBlocks.invoke(mNewAssetManager);
 
         Resources supResource = super.getResources();
-        Log.e("Main", "supResource = " + supResource);
+        Log.e("Main", "父类 supResource = " + supResource);
         mNewResource = new Resources(mNewAssetManager, supResource.getDisplayMetrics(), supResource.getConfiguration());
         Log.e("Main", "设置 getResource = " + getResources());
 

@@ -29,7 +29,7 @@ public class MyInvokeHandler implements InvocationHandler {
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         if ("startActivity".equals(method.getName())) {
-            Log.e("Main", "startActivity方法拦截了");
+            Log.e("MyInvokeHandler", "startActivity方法拦截了");
             int index = 0;
             Intent rawIntent = null;
             for (int i = 0; i < args.length; i++) {
@@ -45,7 +45,7 @@ public class MyInvokeHandler implements InvocationHandler {
             String packageName = BasicApp.getContext().getPackageName();
             ComponentName componentName = new ComponentName(packageName, EmptyActivity.class.getName());
             intent.setComponent(componentName);
-            Log.e("TAG", "invoke: " + rawIntent);
+            Log.e("MyInvokeHandler", "invoke: " + rawIntent);
             intent.putExtra(EXTRA_TARGET_INTENT, rawIntent);
 
             args[index] = intent;

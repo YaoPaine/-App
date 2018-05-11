@@ -43,15 +43,15 @@ public class MyCallBack implements Handler.Callback {
     }
 
     private void handleLaunchActivity(Message msg) throws NoSuchFieldException, IllegalAccessException {
-        Log.e("Main", "handleLaunchActivity方法 拦截");
+        Log.e("MyCallBack", "handleLaunchActivity方法 拦截");
         //final ActivityClientRecord r = (ActivityClientRecord) msg.obj;
         Object obj = msg.obj;
         Field intentField = obj.getClass().getDeclaredField("intent");
         intentField.setAccessible(true);
         Intent intent = (Intent) intentField.get(obj);
-        Log.e("TAG", "handleLaunchActivity: " + intent);
+        Log.e("MyCallBack", "假的: " + intent);
         Intent rawIntent = intent.getParcelableExtra(MyInvokeHandler.EXTRA_TARGET_INTENT);
-        Log.e("TAG", "handleLaunchActivity: " + rawIntent);
+        Log.e("MyCallBack", "真的: " + rawIntent);
         intent.setComponent(rawIntent.getComponent());
     }
 }
