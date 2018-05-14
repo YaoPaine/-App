@@ -1,1 +1,1 @@
-include ':app', ':opengl', ':dynamic-load'
+include ':app', ':opengl', ':dynamic-load', ':albumwx', ':JavaBase'
