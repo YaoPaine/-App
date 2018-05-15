@@ -22,6 +22,9 @@ public class ImageDetailView extends AppCompatImageView {
 
     public ImageDetailView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+
+        postInvalidate();
+        postInvalidate(0,1,1,2);
     }
 
 

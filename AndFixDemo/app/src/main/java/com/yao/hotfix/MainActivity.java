@@ -11,8 +11,9 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.yaopaine.BasicApp;
+import com.yaopaine.albumwx.BitmapRegionDecoderActivity;
+import com.yaopaine.albumwx.FullImageActivity;
 import com.yaopaine.andfix.R;
-import com.yaopaine.dynamic.LoadActivity;
 import com.yaopaine.helper.AMSHookHelper;
 import com.yaopaine.helper.HookHelper;
 import com.yaopaine.helper.PMSHookHelper;
@@ -85,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
 //        startActivity(intent);
         Intent intent = new Intent();
         intent.setComponent(new ComponentName("com.yaopaine.aptsample", "com.yaopaine.aptsample.PluginActivity"));
-        startActivityForResult(intent,100);
+        startActivityForResult(intent, 100);
 
 //        try {
 //            HotFixManager.getInstance().init(this);
@@ -97,9 +98,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void toActivity(View view) {
-        startActivity(new Intent(this, LoadActivity.class));
+        startActivity(new Intent(this, FullImageActivity.class));
     }
-
 
     private void showToast(String msg) {
 //        Intent intent = new Intent(this, DynamicLoadActivity.class);
