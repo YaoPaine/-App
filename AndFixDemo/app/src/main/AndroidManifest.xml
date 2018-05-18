@@ -35,7 +35,7 @@
             android:configChanges="orientation|screenSize"
             android:exported="true"
             android:taskAffinity="@string/task_affinity1">
-
+            <!--android:exported="true" 允许被其它应用启动 -->
         </activity>
 
         <activity
