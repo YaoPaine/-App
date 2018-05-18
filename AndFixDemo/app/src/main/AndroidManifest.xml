@@ -31,7 +31,12 @@
 
         <activity
             android:name="com.yaopaine.dynamic.EmptyActivity"
-            android:configChanges="orientation|screenSize" />
+            android:allowTaskReparenting="true"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:taskAffinity="@string/task_affinity1">
+
+        </activity>
 
         <activity
             android:name="com.yaopaine.androidart.MainActivity"
@@ -52,6 +57,7 @@
             android:name="com.yaopaine.androidart.chapter1.Chapter1Launch2Activity"
             android:launchMode="singleTop"
             android:taskAffinity="@string/task_affinity1" />
+
     </application>
 
 </manifest>
