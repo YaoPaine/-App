@@ -1,4 +1,4 @@
-package com.yaopaine.androidart;
+package com.yaopaine.androidart.chapter1;
 
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -6,8 +6,10 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
+import com.yaopaine.androidart.R;
+
 /**
- * @Description
+ * @Description 生命周期的再熟悉
  * @AuthorCreated yaopaine
  * @Version 1.0
  * @Time 5/18/18

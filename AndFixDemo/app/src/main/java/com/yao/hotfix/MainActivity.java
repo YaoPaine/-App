@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 import com.yaopaine.BasicApp;
 import com.yaopaine.andfix.R;
-import com.yaopaine.androidart.Chapter1Activity;
+import com.yaopaine.androidart.chapter1.Chapter1Activity;
 import com.yaopaine.helper.AMSHookHelper;
 import com.yaopaine.helper.HookHelper;
 import com.yaopaine.helper.PMSHookHelper;
