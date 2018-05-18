@@ -27,10 +27,11 @@
 
         <!--</activity>-->
 
-        <activity android:name="com.yaopaine.handler.HandlerActivity" />
+        <!--<activity android:name="com.yaopaine.handler.HandlerActivity" />-->
 
         <activity
-            android:name="com.yaopaine.dynamic.EmptyActivity" />
+            android:name="com.yaopaine.dynamic.EmptyActivity"
+            android:configChanges="orientation|screenSize" />
 
         <activity android:name="com.yao.hotfix.MainActivity">
             <intent-filter>

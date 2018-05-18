@@ -43,7 +43,6 @@ public class MoveGestureDetector extends BaseGestureDetector {
                     mPreMotionEvent = MotionEvent.obtain(event);
                 }
                 break;
-
         }
     }
 
@@ -60,7 +59,6 @@ public class MoveGestureDetector extends BaseGestureDetector {
                 mGestureInProgress = mListenter.onMoveBegin(this);
                 break;
         }
-
     }
 
     protected void updateStateByEvent(MotionEvent event) {

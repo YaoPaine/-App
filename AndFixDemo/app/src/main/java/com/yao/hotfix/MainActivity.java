@@ -11,9 +11,8 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.yaopaine.BasicApp;
-import com.yaopaine.albumwx.BitmapRegionDecoderActivity;
-import com.yaopaine.albumwx.FullImageActivity;
 import com.yaopaine.andfix.R;
+import com.yaopaine.androidart.Chapter1Activity;
 import com.yaopaine.helper.AMSHookHelper;
 import com.yaopaine.helper.HookHelper;
 import com.yaopaine.helper.PMSHookHelper;
@@ -98,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void toActivity(View view) {
-        startActivity(new Intent(this, FullImageActivity.class));
+        startActivity(new Intent(this, Chapter1Activity.class));
     }
 
     private void showToast(String msg) {

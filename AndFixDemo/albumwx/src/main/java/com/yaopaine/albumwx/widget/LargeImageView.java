@@ -8,6 +8,7 @@ import android.graphics.Canvas;
 import android.graphics.Rect;
 import android.media.ExifInterface;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
@@ -158,7 +159,7 @@ public class LargeImageView extends View {
 
         int width = getMeasuredWidth();
         int height = getMeasuredHeight();
-
+        Log.e("TAG", "width: " + width + "\theight: " + height);
         int imageWidth = mImageWidth;
         int imageHeight = mImageHeight;
 

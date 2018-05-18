@@ -62,4 +62,5 @@ dependencies {
     implementation project(':opengl')
     implementation project(':dynamic-load')
     implementation project(':albumwx')
+    implementation project(':AndroidBook:androidart')
 }

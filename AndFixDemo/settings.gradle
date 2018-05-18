@@ -1,1 +1,1 @@
-include ':app', ':opengl', ':dynamic-load', ':albumwx', ':JavaBase'
+include ':app', ':opengl', ':dynamic-load', ':albumwx', ':JavaBase', ':AndroidBook:androidart'
