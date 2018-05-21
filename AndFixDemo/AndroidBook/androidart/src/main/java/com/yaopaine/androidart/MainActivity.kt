@@ -1,26 +1,86 @@
 package com.yaopaine.androidart
 
+import android.content.ComponentName
+import android.content.Context
 import android.content.Intent
+import android.content.ServiceConnection
 import android.content.res.Configuration
-import android.os.Bundle
+import android.os.*
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import com.yaopaine.androidart.chapter1.Chapter1LaunchActivity
+import com.yaopaine.androidart.chapter1.FlagActivity
+import com.yaopaine.androidart.chapter2.MessageService
 import kotlinx.android.synthetic.main.activity_main_art.*
 
 class MainActivity : AppCompatActivity() {
 
+
     companion object {
+        const val MSG_FROM_CLIENT = 999
         const val TAG: String = "MainActivity"
+        var sUserId: Int = 1
+
+        class ClientHandler : Handler() {
+            override fun handleMessage(msg: Message?) {
+                when (msg?.what) {
+                    MessageService.MSG_FROM_SERVICE -> {
+                        var bundle = msg.data
+                        Log.e(TAG, bundle.getString("msg_client"))
+                    }
+                }
+                super.handleMessage(msg)
+            }
+        }
     }
+
+    private lateinit var mServer: Messenger
+
+    private val conn: ServiceConnection = object : ServiceConnection {
+
+        override fun onServiceDisconnected(name: ComponentName?) {
+            Log.e(TAG, "onServiceDisconnected")
+
+        }
+
+        override fun onServiceConnected(name: ComponentName?, service: IBinder?) {
+            Log.e(TAG, "onServiceConnected")
+            mServer = Messenger(service)
+            val message = Message.obtain(null, MSG_FROM_CLIENT)
+            val bundle = Bundle()
+            bundle.putString("msg_server", "这台IPhone X送给我可以吗")
+            message.data = bundle
+
+            message.replyTo = mClient
+
+            mServer.send(message)
+        }
+    }
+
+    private lateinit var mClient: Messenger
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_art)
 
+        mClient = Messenger(ClientHandler())
+
         button1.setOnClickListener {
             val intent = Intent(this@MainActivity, Chapter1LaunchActivity::class.java)
             startActivity(intent)
+        }
+
+        button11.setOnClickListener {
+            val intent = Intent(this@MainActivity, FlagActivity::class.java)
+            startActivity(intent)
+        }
+
+        MainActivity.sUserId = 10
+        Log.e("MainActivity", "sUserId:" + MainActivity.sUserId)
+
+        button13.setOnClickListener {
+            val intent = Intent(this@MainActivity, MessageService::class.java)
+            bindService(intent, conn, Context.BIND_AUTO_CREATE)
         }
     }
 
@@ -74,6 +134,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onDestroy() {
         super.onDestroy()
+        unbindService(conn)
         Log.e(MainActivity.TAG, "onDestroy: ")
     }
 }

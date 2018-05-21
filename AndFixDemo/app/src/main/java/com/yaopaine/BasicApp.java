@@ -1,19 +1,20 @@
 package com.yaopaine;
 
+import android.app.ActivityManager;
 import android.app.Application;
 import android.app.Instrumentation;
 import android.content.Context;
 import android.content.res.AssetManager;
 import android.content.res.Resources;
 import android.os.Environment;
+import android.os.Process;
 import android.util.Log;
-
-import com.yaopaine.andfix.R;
 
 import java.io.File;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.util.List;
 
 import dalvik.system.DexClassLoader;
 
@@ -32,7 +33,14 @@ public class BasicApp extends Application {
         super.onCreate();
         //replaceInstrumentation();
         mContext = getApplicationContext();
-
+        int pid = Process.myPid();
+        ActivityManager activityManager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
+        List<ActivityManager.RunningAppProcessInfo> runningAppProcesses = activityManager.getRunningAppProcesses();
+        for (ActivityManager.RunningAppProcessInfo processInfo : runningAppProcesses) {
+            if (pid == processInfo.pid) {
+                Log.e("TAG", "processName: " + processInfo.processName);
+            }
+        }
         try {
             resolveResource();
         } catch (Exception e) {

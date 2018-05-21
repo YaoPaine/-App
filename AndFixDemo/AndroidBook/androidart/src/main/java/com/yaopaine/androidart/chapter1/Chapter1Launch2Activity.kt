@@ -17,7 +17,7 @@ class Chapter1Launch2Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chapter1_launch2)
-
+        Log.e("Chapter1Launch2Activity", "sUserId:" + MainActivity.sUserId)
         button3.setOnClickListener {
             val intent = Intent(this@Chapter1Launch2Activity, MainActivity::class.java)
             startActivity(intent)
@@ -25,6 +25,13 @@ class Chapter1Launch2Activity : AppCompatActivity() {
 
         button4.setOnClickListener {
             val intent = Intent(this@Chapter1Launch2Activity, this::class.java)
+            startActivity(intent)
+        }
+
+        button5.setOnClickListener {
+            val intent = Intent(this@Chapter1Launch2Activity, FlagActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
             startActivity(intent)
         }
 

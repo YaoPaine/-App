@@ -19,4 +19,11 @@
         android:text="跳转自己"
         app:layout_constraintTop_toBottomOf="@id/button3" />
 
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转设置Flag"
+        app:layout_constraintTop_toBottomOf="@id/button4" />
+
 </android.support.constraint.ConstraintLayout>

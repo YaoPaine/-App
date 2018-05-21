@@ -2,4 +2,5 @@
     <string name="app_name">AndroidArt</string>
     <string name="task_affinity1">io.taskHeYao1</string>
     <string name="task_affinity2">com.taskHeYao2</string>
+    <string name="process_activity">yaopaine.newProcess</string>
 </resources>

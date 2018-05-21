@@ -5,21 +5,16 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/button1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="点击跳转" />
-
-    <Button
-        android:id="@+id/button11"
+        android:id="@+id/button21"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="设置flag跳转Activity"
         android:textAllCaps="false" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/button22"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="远程发送消息" />
+        android:text="Intent匹配规则"
+        android:textAllCaps="false" />
 </LinearLayout>
