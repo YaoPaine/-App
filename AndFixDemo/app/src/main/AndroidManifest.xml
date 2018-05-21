@@ -5,6 +5,9 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <uses-permission android:name="com.yaopaine.permission.ACCESS_BOOK_SERVICE" />
 
     <uses-permission android:name="com.yaopaine.androidart.PROVIDER" />
@@ -83,6 +86,8 @@
 
         <activity android:name="com.yaopaine.androidart.chapter1.FlagActivity" />
 
+        <activity android:name="com.yaopaine.androidart.chapter2.socket.TcpClientActivity" />
+
         <!--<activity-->
         <!--android:name="com.yaopaine.androidart.chapter1.Chapter1Launch2Activity"-->
         <!--android:launchMode="singleTop"-->
@@ -105,6 +110,18 @@
             android:process=":remote.chapter2" />
         <service
             android:name="com.yaopaine.androidart.chapter2.BookCallBackService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":remote.chapter2" />
+
+        <service
+            android:name="com.yaopaine.androidart.chapter2.socket.TcpServerService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":remote.chapter2" />
+
+        <service
+            android:name="com.yaopaine.androidart.chapter2.binderpool.BinderPoolService"
             android:enabled="true"
             android:exported="false"
             android:process=":remote.chapter2" />

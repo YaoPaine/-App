@@ -11,7 +11,7 @@ import android.util.Log
 import com.yaopaine.androidart.chapter1.Chapter1LaunchActivity
 import com.yaopaine.androidart.chapter1.FlagActivity
 import com.yaopaine.androidart.chapter2.MessageService
-import com.yaopaine.androidart.chapter2.provider.ProviderActivity
+import com.yaopaine.androidart.chapter2.binderpool.BinderPool
 import kotlinx.android.synthetic.main.activity_main_art.*
 
 class MainActivity : AppCompatActivity() {
@@ -94,8 +94,21 @@ class MainActivity : AppCompatActivity() {
 
             val cursor3 = contentResolver.query(uri, null, null, null, null)
             cursor3?.close()*/
-            val intent = Intent(this@MainActivity, ProviderActivity::class.java)
-            startActivity(intent)
+            /*val intent = Intent(this@MainActivity, ProviderActivity::class.java)
+            startActivity(intent)*/
+
+//            val intent = Intent(this@MainActivity, TcpClientActivity::class.java)
+//            startActivity(intent)
+            val pool: BinderPool = BinderPool.getInstance(this@MainActivity.application)
+            val queryBinder = pool.queryBinder(BinderPool.BINDER_CODE_COMPUTE)
+
+            val iCompute = ICompute.Stub.asInterface(queryBinder)
+            iCompute?.add(1, 2)
+
+            val queryBinder1 = pool.queryBinder(BinderPool.BINDER_CODE_ENCRTY)
+            val iSecurity = ISecurity.Stub.asInterface(queryBinder1)
+            iSecurity?.decode("解密")
+            iSecurity?.encry("加密")
         }
     }
 
@@ -149,7 +162,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onDestroy() {
         super.onDestroy()
-        unbindService(conn)
+        //unbindService(conn)
         Log.e(MainActivity.TAG, "onDestroy: ")
     }
 }
