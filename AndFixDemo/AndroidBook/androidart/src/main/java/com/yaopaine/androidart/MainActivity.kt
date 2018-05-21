@@ -11,6 +11,7 @@ import android.util.Log
 import com.yaopaine.androidart.chapter1.Chapter1LaunchActivity
 import com.yaopaine.androidart.chapter1.FlagActivity
 import com.yaopaine.androidart.chapter2.MessageService
+import com.yaopaine.androidart.chapter2.provider.ProviderActivity
 import kotlinx.android.synthetic.main.activity_main_art.*
 
 class MainActivity : AppCompatActivity() {
@@ -81,6 +82,20 @@ class MainActivity : AppCompatActivity() {
         button13.setOnClickListener {
             val intent = Intent(this@MainActivity, MessageService::class.java)
             bindService(intent, conn, Context.BIND_AUTO_CREATE)
+        }
+
+        button14.setOnClickListener {
+            /*val uri = Uri.parse("content://com.yaopaine.androidart.chapter2.book.provider")
+            val cursor1 = contentResolver.query(uri, null, null, null, null)
+            cursor1?.close()
+
+            val cursor2 = contentResolver.query(uri, null, null, null, null)
+            cursor2?.close()
+
+            val cursor3 = contentResolver.query(uri, null, null, null, null)
+            cursor3?.close()*/
+            val intent = Intent(this@MainActivity, ProviderActivity::class.java)
+            startActivity(intent)
         }
     }
 
